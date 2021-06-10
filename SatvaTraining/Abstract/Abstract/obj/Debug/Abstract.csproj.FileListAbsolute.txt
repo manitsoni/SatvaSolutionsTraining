@@ -1,0 +1,14 @@
+D:\SatvaTraining\Abstract\Abstract\bin\Debug\Abstract.exe.config
+D:\SatvaTraining\Abstract\Abstract\bin\Debug\Abstract.exe
+D:\SatvaTraining\Abstract\Abstract\bin\Debug\Abstract.pdb
+D:\SatvaTraining\Abstract\Abstract\obj\Debug\Abstract.csprojAssemblyReference.cache
+D:\SatvaTraining\Abstract\Abstract\obj\Debug\Abstract.csproj.CoreCompileInputs.cache
+D:\SatvaTraining\Abstract\Abstract\obj\Debug\Abstract.exe
+D:\SatvaTraining\Abstract\Abstract\obj\Debug\Abstract.pdb
+E:\Manit\SatvaTraining\Abstract\Abstract\bin\Debug\Abstract.exe.config
+E:\Manit\SatvaTraining\Abstract\Abstract\bin\Debug\Abstract.exe
+E:\Manit\SatvaTraining\Abstract\Abstract\bin\Debug\Abstract.pdb
+E:\Manit\SatvaTraining\Abstract\Abstract\obj\Debug\Abstract.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\Abstract\Abstract\obj\Debug\Abstract.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\Abstract\Abstract\obj\Debug\Abstract.exe
+E:\Manit\SatvaTraining\Abstract\Abstract\obj\Debug\Abstract.pdb

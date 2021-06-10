@@ -1,0 +1,285 @@
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\nTireCrudDemo.dll.config
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\nTireCrudDemo.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\nTireCrudDemo.pdb
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csc.exe
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csc.exe.config
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csc.rsp
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csi.exe
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csi.exe.config
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csi.rsp
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Buffers.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Collections.Immutable.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Memory.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Numerics.Vectors.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Reflection.Metadata.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\vbc.exe
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\vbc.exe.config
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\vbc.rsp
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\VBCSCompiler.exe
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\roslyn\VBCSCompiler.exe.config
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Antlr3.Runtime.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\AutoMapper.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\BE.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\BL.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Common.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Data.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.SqlServer.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.Web.Infrastructure.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Newtonsoft.Json.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Helpers.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Mvc.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Optimization.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Razor.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Deployment.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Razor.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Unity.Abstractions.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Unity.Container.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Unity.Mvc5.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\WebGrease.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Threading.Tasks.Extensions.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\BE.pdb
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\BL.pdb
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\BL.dll.config
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Common.pdb
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Data.pdb
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Data.dll.config
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\AutoMapper.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.SqlServer.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Newtonsoft.Json.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Helpers.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Mvc.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Optimization.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Razor.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Deployment.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Razor.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Unity.Abstractions.pdb
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Unity.Container.pdb
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Antlr3.Runtime.pdb
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.csprojAssemblyReference.cache
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.csproj.CoreCompileInputs.cache
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.csproj.CopyComplete
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.pdb
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\RestSharp.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\RestSharp.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.IdentityModel.Logging.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Twilio.AspNet.Common.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Twilio.AspNet.Mvc.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Twilio.dll
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Dell\c#\nTireCrudDemo\nTireCrudDemo\bin\Twilio.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\nTireCrudDemo.dll.config
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\nTireCrudDemo.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\nTireCrudDemo.pdb
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csc.exe
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csc.exe.config
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csc.rsp
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csi.exe
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csi.exe.config
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csi.rsp
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.Managed.Core.targets
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Buffers.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Collections.Immutable.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Memory.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Numerics.Vectors.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Reflection.Metadata.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\vbc.exe
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\vbc.exe.config
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\vbc.rsp
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\VBCSCompiler.exe
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\roslyn\VBCSCompiler.exe.config
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Antlr3.Runtime.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\AutoMapper.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\BE.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\BL.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Common.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Data.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.SqlServer.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.IdentityModel.Logging.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.IdentityModel.Tokens.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.Web.Infrastructure.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Newtonsoft.Json.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\RestSharp.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Helpers.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Mvc.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Optimization.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Razor.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Deployment.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Razor.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Twilio.AspNet.Common.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Twilio.AspNet.Mvc.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Twilio.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Unity.Abstractions.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Unity.Container.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Unity.Mvc5.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\WebGrease.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Threading.Tasks.Extensions.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\BE.pdb
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\BL.pdb
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\BL.dll.config
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Common.pdb
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Data.pdb
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Data.dll.config
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\AutoMapper.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.SqlServer.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.IdentityModel.Tokens.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Newtonsoft.Json.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\RestSharp.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Helpers.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Mvc.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Optimization.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Razor.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Deployment.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Razor.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Twilio.xml
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Unity.Abstractions.pdb
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Unity.Container.pdb
+E:\New folder\nTireCrudDemo\nTireCrudDemo\bin\Antlr3.Runtime.pdb
+E:\New folder\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.csprojAssemblyReference.cache
+E:\New folder\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.csproj.CoreCompileInputs.cache
+E:\New folder\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.csproj.CopyComplete
+E:\New folder\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.dll
+E:\New folder\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\nTireCrudDemo.dll.config
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\nTireCrudDemo.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\nTireCrudDemo.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csc.exe
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csc.exe.config
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csc.rsp
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csi.exe
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csi.exe.config
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\csi.rsp
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Buffers.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Collections.Immutable.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Memory.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Numerics.Vectors.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Reflection.Metadata.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\vbc.exe
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\vbc.exe.config
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\vbc.rsp
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\VBCSCompiler.exe
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\roslyn\VBCSCompiler.exe.config
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Antlr3.Runtime.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\AutoMapper.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\BE.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\BL.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Common.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Data.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.SqlServer.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.IdentityModel.Logging.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.IdentityModel.Tokens.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.Web.Infrastructure.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Newtonsoft.Json.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\RestSharp.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Helpers.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Mvc.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Optimization.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Razor.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Deployment.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Razor.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Twilio.AspNet.Common.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Twilio.AspNet.Mvc.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Twilio.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Unity.Abstractions.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Unity.Container.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Unity.Mvc5.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\WebGrease.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Threading.Tasks.Extensions.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\BE.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\BL.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\BL.dll.config
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Common.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Data.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Data.dll.config
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\AutoMapper.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\EntityFramework.SqlServer.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Microsoft.IdentityModel.Tokens.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Newtonsoft.Json.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\RestSharp.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Helpers.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Mvc.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Optimization.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.Razor.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Deployment.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\System.Web.WebPages.Razor.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Twilio.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Unity.Abstractions.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Unity.Container.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\bin\Antlr3.Runtime.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.csproj.CopyComplete
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\nTireCrudDemo\obj\Debug\nTireCrudDemo.pdb

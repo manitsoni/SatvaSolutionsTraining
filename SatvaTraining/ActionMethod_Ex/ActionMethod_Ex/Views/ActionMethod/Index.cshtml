@@ -1,0 +1,9 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h1>Index Page In Action Method Controller</h1>
+<form action="~/ActionMethod/DownloadFile" method="post">
+    <input type="submit" class="btn btn-info" name="name" value="DownloadFile" />
+</form>
+@Html.Partial("GetPartial")

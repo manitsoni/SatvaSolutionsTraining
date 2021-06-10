@@ -1,0 +1,18 @@
+D:\Dell\c#\nTireCrudDemo\BE\bin\Debug\BE.dll
+D:\Dell\c#\nTireCrudDemo\BE\bin\Debug\BE.pdb
+D:\Dell\c#\nTireCrudDemo\BE\obj\Debug\BE.csprojAssemblyReference.cache
+D:\Dell\c#\nTireCrudDemo\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+D:\Dell\c#\nTireCrudDemo\BE\obj\Debug\BE.dll
+D:\Dell\c#\nTireCrudDemo\BE\obj\Debug\BE.pdb
+E:\New folder\nTireCrudDemo\BE\bin\Debug\BE.dll
+E:\New folder\nTireCrudDemo\BE\bin\Debug\BE.pdb
+E:\New folder\nTireCrudDemo\BE\obj\Debug\BE.csprojAssemblyReference.cache
+E:\New folder\nTireCrudDemo\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+E:\New folder\nTireCrudDemo\BE\obj\Debug\BE.dll
+E:\New folder\nTireCrudDemo\BE\obj\Debug\BE.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\BE\bin\Debug\BE.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BE\bin\Debug\BE.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\BE\obj\Debug\BE.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\BE\obj\Debug\BE.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BE\obj\Debug\BE.pdb

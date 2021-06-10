@@ -1,0 +1,30 @@
+﻿@model FileUploadDownload.Models.FileList
+@{
+    ViewBag.Title = "AddFile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            @using (Html.BeginForm("AddFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                <div class="col-sm-9">
+                    <input type="file" id="File" name="File" class="form-control" data-val="true",data-val-required="Image file is required!" />
+                    @Html.ValidationMessageFor(model => model.File, "", new { @class = "text-danger" })
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <br />
+                        <input type="submit" name="name" class="btn btn-success" value="Upload" />
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

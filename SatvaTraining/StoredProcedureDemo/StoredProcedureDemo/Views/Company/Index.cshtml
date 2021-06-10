@@ -1,0 +1,56 @@
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<StoredProcedureDemo.Models.tblCompany>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Company List</h2>
+<br />
+<a href="~/Company/Create" class="btn btn-success">Create</a>
+<br />
+<br />
+@using (Html.BeginForm())
+{
+    <p>
+        Find : <input type="text" id="search" name="search" class="form-control" /><br />
+        <input type="submit" value="Search" class="btn btn-success" />
+    </p>
+}
+<table class="table table-hover">
+    <tr>
+        <th>
+            @Html.ActionLink("Id", "Index", new { sortOrder = ViewBag.IdSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("CompanyName", "Index", new { sortOrder = ViewBag.NameSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("Email", "Index", new { sortOrder = ViewBag.EmailSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("ContactNo", "Index", new { sortOrder = ViewBag.ContactNoSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("CreatedDate", "Index", new { sortOrder = ViewBag.DateSortParm })
+        </th>
+        <th>
+            Action
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Id)</td>
+            <td>@Html.DisplayFor(modelItem => item.CompanyName)</td>
+            <td>@Html.DisplayFor(modelItem => item.Email)</td>
+            <td>@Html.DisplayFor(modelItem => item.ContactNo)</td>
+            <td>@Html.DisplayFor(modelItem => item.CreatedDate)</td>
+            <td><a href="~/Company/Edit?Id=@item.Id" class="btn btn-info">Edit</a> | <a href="~/Company/Delete?Id=@item.Id" class="btn btn-danger">Delete</a></td>
+        </tr>
+    }
+
+</table>
+<br />
+@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+

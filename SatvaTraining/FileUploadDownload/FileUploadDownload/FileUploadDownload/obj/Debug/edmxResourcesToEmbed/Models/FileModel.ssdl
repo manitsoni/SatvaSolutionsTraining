@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FileUploadDownloadModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tblFile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileName" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tblFileDownload">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileId" Type="int" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="DownloadedTime" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblRegister">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <Association Name="FK_tblFileDownload_tblFile">
+    <End Role="tblFile" Type="Self.tblFile" Multiplicity="0..1" />
+    <End Role="tblFileDownload" Type="Self.tblFileDownload" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFile">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFileDownload">
+        <PropertyRef Name="FileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFileDownload_tblRegister">
+    <End Role="tblRegister" Type="Self.tblRegister" Multiplicity="0..1" />
+    <End Role="tblFileDownload" Type="Self.tblFileDownload" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegister">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFileDownload">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FileUploadDownloadModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFile" EntityType="Self.tblFile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFileDownload" EntityType="Self.tblFileDownload" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRegister" EntityType="Self.tblRegister" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblFileDownload_tblFile" Association="Self.FK_tblFileDownload_tblFile">
+      <End Role="tblFile" EntitySet="tblFile" />
+      <End Role="tblFileDownload" EntitySet="tblFileDownload" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFileDownload_tblRegister" Association="Self.FK_tblFileDownload_tblRegister">
+      <End Role="tblRegister" EntitySet="tblRegister" />
+      <End Role="tblFileDownload" EntitySet="tblFileDownload" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

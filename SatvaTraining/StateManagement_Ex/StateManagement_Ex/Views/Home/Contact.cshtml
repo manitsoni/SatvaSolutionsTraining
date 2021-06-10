@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+@if (Request.Cookies["Name"].Value.ToString() != null)
+{
+    <h2>Cookies Values : @Request.Cookies["Name"].Value.ToString()</h2>
+}
+<h2>Cookies Values : @Request.Cookies["Name"].Value.ToString()</h2>
+@if (TempData["name"] != null)
+{
+
+    <h2><p>Tempdata value :  @TempData["name"].ToString()</p></h2>
+}
+
+<h3>@ViewBag.Message</h3>

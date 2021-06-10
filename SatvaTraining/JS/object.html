@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects Definations</title>
+</head>
+<body>
+	
+		<input type="text" id="cname" placeholder="Enter car name">
+		<input type="text" id="cprice" placeholder="Enter car price">
+		<input type="text" id="cweight" placeholder="Enter car weight">
+		<input type="text" id="ccolor" placeholder="Enter car color">
+		<input type="text" id="cmodel" placeholder="Enter car model">
+		<button onclick="func1()">Submit</button>
+	<br>
+	<p id="name"></p>
+	<p id="price"></p>
+	<p id="weight"></p>
+	<p id="color"></p>
+	<p id="model"></p>
+
+	<script>
+		function func1()
+		{
+			var car = {
+				name : document.getElementById('cname').value,
+				price : document.getElementById('cprice').value,
+				weight : document.getElementById('cweight').value,
+				color : document.getElementById('ccolor').value,	
+				model : document.getElementById('cmodel').value
+			};	
+			
+			document.getElementById('name').innerHTML =  "Car name  : " + car.name;
+			document.getElementById('price').innerHTML = "Car price : " + car.price;
+			document.getElementById('weight').innerHTML= "Car weight: " + car.weight;
+			document.getElementById('color').innerHTML = "Car color : " + car.color;
+			document.getElementById('model').innerHTML = "Car model : " + car.model;
+		}
+	</script>
+</body>
+</html>

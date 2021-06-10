@@ -1,0 +1,529 @@
+﻿
+@model BE.Employee
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_EmployeeDashboard.cshtml";
+}
+
+<style>
+    .holder {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+    }
+
+    img {
+        max-width: 300px;
+        max-height: 300px;
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    input[type="file"] {
+        margin-top: 5px;
+    }
+
+    .heading {
+        font-family: Montserrat;
+        font-size: 45px;
+        color: green;
+    }
+</style>
+
+<div class="col-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Add New Employee</h4><input type="button" name="enable" id="enable" class="btn btn-gradient-primary" onclick="Enable()" value="Edit" />
+            @using (Html.BeginForm("GetMyInfo", "EmployeeDashboard", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <input type="hidden" id="IsActive" value="" />
+                <input type="hidden" id="IsContactVerify" value="" />
+                <input type="hidden" id="IsEmailVerify" value="" />
+                @Html.AntiForgeryToken()
+
+                <p class="card-description"> Personal info </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">First Name</label>
+                            <div class="col-sm-9">
+
+                                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control", @id = "fname", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Middle Name</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.MiddleName, new { htmlAttributes = new { @class = "form-control", @id = "mname", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.MiddleName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Last Name</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control", @id = "lname", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Email</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @id = "email", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Telephone Number</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.TelephoneNo, new { htmlAttributes = new { @class = "form-control", @id = "tphone", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.TelephoneNo, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Mobile Number</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.MobileNumber, new { htmlAttributes = new { @class = "form-control", @id = "mphone", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.MobileNumber, "", new { @class = "text-danger" })
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <p class="card-description"> Address </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">AddressLine 1</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.AddressLine1, new { htmlAttributes = new { @class = "form-control", @id = "aline1", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.AddressLine1, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">AddressLine 2</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.AddressLine2, new { htmlAttributes = new { @class = "form-control", @id = "aline2", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.AddressLine2, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Country</label>
+                            <div class="col-sm-9">
+                                @Html.DropDownList("Country", (IEnumerable<SelectListItem>)ViewBag.list, "Select Country", new { @class = "form-control", @id = "Country", @onchange = "GetStateByCountry()", @disabled = "disabled" })
+                                @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">State</label>
+                            <div class="col-sm-9">
+                                @Html.DropDownList("State", (IEnumerable<SelectListItem>)ViewBag.list, "Select State", new { @class = "form-control", @id = "State", @onchange = "GetCityByState()", @disabled = "disabled" })
+                                @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">City</label>
+                            <div class="col-sm-9">
+                                @Html.DropDownList("City", (IEnumerable<SelectListItem>)ViewBag.list, "Select City", new { @class = "form-control", @id = "City", @disabled = "disabled" })
+                                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Area</label>
+                            <div class="col-sm-7">
+                                @Html.EditorFor(model => model.Area, new { htmlAttributes = new { @class = "form-control", @id = "area", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.Area, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group row">
+                            <label class="col-sm-4   col-form-label">Pincode</label>
+                            <div class="col-sm-7">
+                                @Html.EditorFor(model => model.Pincode, new { htmlAttributes = new { @class = "form-control", @id = "pincode", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.Pincode, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="card-description"> Other Information </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Joining Date</label>
+                            <div class="col-sm-9">
+                                @Html.EditorFor(model => model.JoiningDate, new { htmlAttributes = new { @class = "form-control", @id = "jdate", @readonly = "true" } })
+                                @Html.ValidationMessageFor(model => model.JoiningDate, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="form-check">
+
+                                @Html.CheckBoxFor(model => model.IsTrainee, new { @class = "form-check-input", @id = "trainee" })
+
+                                @Html.LabelFor(model => model.IsTrainee, new { @class = "form-check-label", @readonly = "true" })
+                                @Html.ValidationMessageFor(model => model.IsTrainee, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Photo</label>
+                            <div class="col-sm-9">
+
+                                <input type="file" id="ImageFile" name="ImageFile" onchange="showMyImage(this)" class="form-control" />
+                                @Html.ValidationMessageFor(model => model.ImageFile, "", new { @class = "text-danger" })
+                                <img id="thumbnil" style="width:10%; margin-top:10px;" src="" alt="Display Your Image" />
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Resume</label>
+                            <div class="col-sm-9">
+                                @*@Html.TextBoxFor(model => model.ImageFile2, new { @class="form-control"})*@
+                                <input type="file" accept="docs/*" id="ImageFile2" name="ImageFile2" class="form-control" />
+                                @Html.ValidationMessageFor(model => model.ImageFile2, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Department</label>
+                            <div class="col-sm-9">
+                                @Html.DropDownList("DepartmentId", (IEnumerable<SelectListItem>)ViewBag.list, "Select Department", new { @class = "form-control", @id = "DepartmentId", @disabled = "true" })
+                                @Html.ValidationMessageFor(model => model.DepartmentId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Comment</label>
+                            <div class="col-sm-9">
+                                @Html.TextAreaFor(model => model.Comment, new { @class = "form-control", @id = "comment", @readonly = "true" })
+                                @Html.ValidationMessageFor(model => model.Comment, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="submit" name="name" class="btn btn-gradient-success" id="register" disabled value="Update" />
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="loading">
+    <img id="loading-image" src="~/Content/spinner/Spinner-3.gif" alt="Loading..." />
+</div>
+
+<script type="text/javascript">
+    function showMyImage(fileInput) {
+        var files = fileInput.files;
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            var imageType = /image.*/;
+            if (!file.type.match(imageType)) {
+                continue;
+            }
+            var img = document.getElementById("thumbnil");
+            img.file = file;
+            var reader = new FileReader();
+            reader.onload = (function (aImg) {
+                return function (e) {
+                    aImg.src = e.target.result;
+                };
+            })(img);
+            reader.readAsDataURL(file);
+        }
+    }
+</script>
+
+<style>
+    #loading {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: block;
+        opacity: 0.7;
+        background-color: #fff;
+        z-index: 99;
+        text-align: center;
+    }
+
+    #loading-image {
+        position: absolute;
+        top: 350px;
+        left: 750px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+    }
+</style>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#loading').show();
+        GetInfo();
+        GetCountry();
+        GetDepartment();
+        $('#loading').hide();
+        debugger;
+        var message = '@TempData["msg"]';
+        if (message == "") {
+
+        }
+        else
+        {
+            swal({
+                title: "Failure!",
+                text: message
+            });
+        }
+
+    });
+    function GetInfo() {
+        $.ajax({
+            url: '@Url.Action("GetInfo" , "EmployeeDashboard")',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                console.log(result)
+                $.each(result, function (key, item) {
+                    console.log(item.Photo, item.Resume);
+                    $("#IsActive").val(item.IsActive);
+                    $("#IsEmailVerify").val(item.IsEmailVerify);
+                    $("#IsContactVerify").val(item.IsContactVerify);
+                    $("#fname").val(item.FirstName);
+                    $("#mname").val(item.MiddleName);
+                    $("#lname").val(item.LastName);
+                    $("#email").val(item.Email);
+                    $("#Country").val(item.Country);
+                    $("#tphone").val(item.TelephoneNo);
+                    $("#mphone").val(item.MobileNumber);
+                    $("#aline1").val(item.AddressLine1);
+                    $("#aline2").val(item.AddressLine2);
+                    $("#area").val(item.Area);
+                    $("#pincode").val(item.Pincode);
+                    $("#trainee").val(item.IsTrainee);
+                    $("#ImageFile").val(item.Photo);
+                    $("#jdate").val(item.JoiningDate);
+                    $("#DepartmentId").val(item.DepartmentId);
+                    $("#comment").val(item.Comment);
+                });
+            },
+            error: function (error) {
+                alert(error.responseText);
+            }
+        });
+    }
+    function GetDepartment() {
+        $('#loading').show();
+        var department = $("#DepartmentId");
+        department.html("").append('<option>(Select Department)</option>');
+        $.ajax({
+            url: '@Url.Action("GetDepartment", "EmployeeManager")',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                $.each(result, function (key, item) {
+                    department.append($('<option align="center"></option').text(item.DepartmentName).val(item.Id));
+                });
+                $('#loading').hide();
+            },
+            error: function (error) {
+                $('#loading').hide();
+                alert(error.responseText);
+
+            }
+        });
+    }
+    function GetCountry() {
+
+        $('#loading').show();
+        var country = $("#Country");
+        country.html("").append('<option>Select Country</option>');
+        $.ajax({
+            url: '@Url.Action("GetCountry","EmployeeManager")',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                $.each(result, function (key, item) {
+                    country.append($('<option></option').text(item.CountryName).val(item.Id));
+                });
+                $('#loading').hide();
+            },
+            error: function (error) {
+                $('#loading').hide();
+                alert(error.responseText);
+
+            }
+        });
+    }
+    function GetStateByCountry() {
+
+        $('#loading').show();
+        var country = $("#Country").val();
+        var state = $("#State");
+        if (country == "Select Country") {
+            GetCountry();
+        }
+        else
+        {
+            state.html("").append('<option>Select State</option>');
+            $.ajax({
+                url: '@Url.Action("GetState","EmployeeManager")',
+                type: 'GET',
+                dataType: 'json',
+                data: { Countryid: country },
+                success: function (result) {
+                    $('#loading').hide();
+                    $.each(result, function (key, item) {
+                        state.append($('<option></option').text(item.StateName).val(item.Id));
+                    });
+
+                },
+                error: function (error) {
+                    $('#loading').hide();
+                    alert(error.responseText);
+                }
+            });
+        }
+
+    }
+    function GetCityByState() {
+        $('#loading').show();
+        var state = $("#State").val();
+        var city = $("#City");
+        if (state == "Select State") {
+            GetCountry();
+        }
+        else
+        {
+            city.html("").append('<option>Select State</option>');
+        $.ajax({
+            url: '@Url.Action("GetCity","EmployeeManager")',
+            type: 'GET',
+            dataType: 'json',
+            data: { Stateid: state },
+            success: function (result) {
+                $('#loading').hide();
+                $.each(result, function (key, item) {
+                    city.append($('<option></option').text(item.CityName).val(item.Id));
+                });
+
+            },
+            error: function (error) {
+                $('#loading').hide();
+                alert(error.responseText);
+            }
+        });
+        }
+
+    }
+    function Enable() {
+        var sts = $("#enable").val();
+
+        if (sts == "Cancel") {
+            $("#loading").show();
+            $("#enable").attr("value", "Edit");
+            $("#enable").attr("class", "btn btn-gradient-primary");
+            $("#fname").attr("readonly", true);
+            $("#mname").attr("readonly", true);
+            $("#lname").attr("readonly", true);
+            $("#email").attr("readonly", true);
+            $("#Country").attr("disabled", "disabled");
+            $("#State").attr("disabled", "disabled");
+            $("#City").attr("disabled", "disabled");
+            $("#DepartmentId").attr("disabled", "disabled");
+            $("#register").attr("disabled", "disabled");
+            $("#tphone").attr("readonly", true);
+            $("#mphone").attr("readonly", true);
+            $("#aline1").attr("readonly", true);
+            $("#aline2").attr("readonly", true);
+            $("#area").attr("readonly", true);
+            $("#pincode").attr("readonly", true);
+            $("#trainee").attr("readonly", true);
+            $("#jdate").attr("readonly", true);
+            $("#comment").attr("readonly", true);
+            $("#loading").hide();
+        }
+        else
+        {
+            $("#loading").show();
+            $("#enable").attr("value", "Cancel");
+            $("#enable").attr("class", "btn btn-gradient-danger");
+            $("#fname").attr("readonly", false);
+            $("#mname").attr("readonly", false);
+            $("#lname").attr("readonly", false);
+            $("#email").attr("readonly", false);
+            $("#Country").removeAttr("disabled");
+            $("#State").removeAttr("disabled");
+            $("#City").removeAttr("disabled");
+            $("#DepartmentId").removeAttr("disabled");
+            $("#register").removeAttr("disabled");
+            $("#tphone").attr("readonly", false);
+            $("#mphone").attr("readonly", false);
+            $("#aline1").attr("readonly", false);
+            $("#aline2").attr("readonly", false);
+            $("#area").attr("readonly", false);
+            $("#pincode").attr("readonly", false);
+            $("#trainee").attr("readonly", false);
+            $("#jdate").attr("readonly", false);
+            $("#comment").attr("readonly", false);
+            $("#loading").hide();
+        }
+
+    }
+</script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

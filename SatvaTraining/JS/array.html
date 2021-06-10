@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Method</title>
+</head>
+<body>
+	<label>Select Option : </label>
+	<select onchange="ArrayOperations()" id="arryOP">
+		<option value="0">Select Array Option</option>
+		<option value="1">Add</option>
+		<option value="2">Remove</option>
+		<option value="3">Push</option>
+		<option value="4">POP</option>
+		<option value="5">Sort</option>
+		<option value="6">Length</option>
+	</select>
+	<p id="demo"></p>
+	<script>
+		var arryVal = [];
+		document.getElementById('demo').innerHTML = arryVal;
+
+		function ArrayOperations(){
+			var ch = parseInt(document.getElementById('arryOP').value);	
+			switch(ch)
+			{
+				case 1 :
+					var pos = prompt("Enter location");
+					var value = prompt("Enter value");
+					arryVal[pos] = value;
+					document.getElementById('demo').innerHTML = arryVal;
+					break;
+				case 2:
+					var pos = prompt("Enter location");
+					var value = prompt("Enter value");
+					delete arryVal[pos];
+					document.getElementById('demo').innerHTML = arryVal;
+					break
+				case 3:
+					var value = prompt("Enter value");
+					arryVal.push(value);
+					document.getElementById('demo').innerHTML = arryVal;
+					break;
+				case 4:
+					var length = arryVal.length;
+					alert(arryVal[length-1]);
+					arryVal.pop();
+					document.getElementById('demo').innerHTML = arryVal;
+					break;
+				case 5:
+					arryVal.sort();
+					document.getElementById('demo').innerHTML = arryVal;
+					break;
+				case 6:
+					var ln = arryVal.length;
+					alert("Length of array  is : " + ln);
+					break;
+				default:
+					alert("Wrong");
+
+			}
+		}
+		
+	</script>
+</body>
+</html>

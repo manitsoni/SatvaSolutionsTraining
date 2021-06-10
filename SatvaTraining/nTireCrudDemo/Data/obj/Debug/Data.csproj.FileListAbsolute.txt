@@ -1,0 +1,48 @@
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\Data.dll.config
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\Data.dll
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\Data.pdb
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\BE.dll
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\Common.dll
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\EntityFramework.dll
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\BE.pdb
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\Common.pdb
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\EntityFramework.xml
+D:\Dell\c#\nTireCrudDemo\Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dell\c#\nTireCrudDemo\Data\obj\Debug\Data.csprojAssemblyReference.cache
+D:\Dell\c#\nTireCrudDemo\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\Dell\c#\nTireCrudDemo\Data\obj\Debug\Data.csproj.CopyComplete
+D:\Dell\c#\nTireCrudDemo\Data\obj\Debug\Data.dll
+D:\Dell\c#\nTireCrudDemo\Data\obj\Debug\Data.pdb
+E:\New folder\nTireCrudDemo\Data\bin\Debug\Data.dll.config
+E:\New folder\nTireCrudDemo\Data\bin\Debug\Data.dll
+E:\New folder\nTireCrudDemo\Data\bin\Debug\Data.pdb
+E:\New folder\nTireCrudDemo\Data\bin\Debug\BE.dll
+E:\New folder\nTireCrudDemo\Data\bin\Debug\Common.dll
+E:\New folder\nTireCrudDemo\Data\bin\Debug\EntityFramework.dll
+E:\New folder\nTireCrudDemo\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\New folder\nTireCrudDemo\Data\bin\Debug\BE.pdb
+E:\New folder\nTireCrudDemo\Data\bin\Debug\Common.pdb
+E:\New folder\nTireCrudDemo\Data\bin\Debug\EntityFramework.xml
+E:\New folder\nTireCrudDemo\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\New folder\nTireCrudDemo\Data\obj\Debug\Data.csprojAssemblyReference.cache
+E:\New folder\nTireCrudDemo\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+E:\New folder\nTireCrudDemo\Data\obj\Debug\Data.csproj.CopyComplete
+E:\New folder\nTireCrudDemo\Data\obj\Debug\Data.dll
+E:\New folder\nTireCrudDemo\Data\obj\Debug\Data.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\Data.dll.config
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\Data.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\Data.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\BE.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\Common.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\EntityFramework.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\BE.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\Common.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\EntityFramework.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\obj\Debug\Data.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\obj\Debug\Data.csproj.CopyComplete
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\obj\Debug\Data.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Data\obj\Debug\Data.pdb

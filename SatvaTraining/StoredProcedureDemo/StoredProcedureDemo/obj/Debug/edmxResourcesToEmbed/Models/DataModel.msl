@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ManitEmployeeManagementModelStoreContainer" CdmEntityContainer="ManitEmployeeManagementEntities">
+    <FunctionImportMapping FunctionImportName="AddCompany" FunctionName="ManitEmployeeManagementModel.Store.AddCompany" />
+    <FunctionImportMapping FunctionImportName="CompanyList" FunctionName="ManitEmployeeManagementModel.Store.CompanyList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ManitEmployeeManagementModel.CompanyList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeleteCompany" FunctionName="ManitEmployeeManagementModel.Store.DeleteCompany" />
+    <FunctionImportMapping FunctionImportName="EditCompany" FunctionName="ManitEmployeeManagementModel.Store.EditCompany" />
+    <FunctionImportMapping FunctionImportName="GetCompany" FunctionName="ManitEmployeeManagementModel.Store.GetCompany">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ManitEmployeeManagementModel.GetCompany_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tblCompanies">
+      <EntityTypeMapping TypeName="ManitEmployeeManagementModel.tblCompany">
+        <MappingFragment StoreEntitySet="tblCompany">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

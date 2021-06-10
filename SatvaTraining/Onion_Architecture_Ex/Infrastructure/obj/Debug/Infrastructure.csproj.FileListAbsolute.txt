@@ -1,0 +1,17 @@
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\obj\Debug\Infrastructure.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\obj\Debug\Infrastructure.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\Infrastructure.dll.config
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\Infrastructure.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\Infrastructure.pdb
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\EntityFramework.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\EntityFramework.xml
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\obj\Debug\Infrastructure.csproj.CopyComplete
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\obj\Debug\Infrastructure.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\obj\Debug\Infrastructure.pdb
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\AutoMapper.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\Core.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\Core.pdb
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\Core.dll.config
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Infrastructure\bin\Debug\AutoMapper.xml

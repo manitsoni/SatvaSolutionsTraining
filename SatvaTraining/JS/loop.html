@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Looping Program</title>
+</head>
+<body>
+	<button onclick="WLexpl()">WhileLoop</button>
+	<button onclick="FLexpl()">ForLoop</button>
+	<button onclick="DWLexpl()">DoWhileLoop</button>
+	<p id="demo"></p>
+	<script>
+		function WLexpl(){
+			var car = ["Audi","Benz","Jaguar","Volvo","Toyota"];
+			var i =car.length;
+			var text="";
+			
+			debugger
+			var k =0;
+			while(k < i){
+				debugger
+				text += "Car brand : " + car[k] + "<br>";
+				k++;
+			}
+			document.getElementById('demo').innerHTML = text;
+		}
+		function FLexpl(){
+			var course = ["B.Com","M.Com","BCA","Mscit","Phd"];
+			var ln = course.length;
+			var i = 0;
+			var data = "";
+			for (i = 0;i<ln;i++) 
+			{	
+				data += "Course Name : " + course[i] + "<br>";
+			}
+			document.getElementById('demo').innerHTML = data;
+		}
+		function DWLexpl(){
+			var student = ["Manit","Hinkal","Parth","Shruti","Mahi"];
+			var ln = student.length;
+			var i =0;
+			var data ="";
+			do{
+				data +="Student Name Is : "+student[i] + "<br>";
+				i++
+			}while(i< ln);
+			document.getElementById('demo').innerHTML = data;
+		}	
+	</script>
+</body>
+</html>

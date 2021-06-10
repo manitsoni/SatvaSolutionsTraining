@@ -1,0 +1,266 @@
+﻿@model BE.Company
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_SuperAdmin.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4 ">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" align="center">Add Company</h4>
+
+                <form class="form-group" id="myForm" action="#" method="post">
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+
+                        @*@Html.ValidationSummary("", new { @class = "text-danger" })*@
+                        <div class="form-group">
+                            @Html.HiddenFor(model => model.Id, new { @id = "Id" })
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @placeholder = "Enter Company Name", @class = "form-control", @name = "category", @id = "cname" } })
+                                @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @placeholder = "Enter Email", @class = "form-control", @name = "category", @id = "email" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.ContactNo, new { htmlAttributes = new { @placeholder = "Enter Contact Number", @class = "form-control", @name = "category", @id = "contact" } })
+                                @Html.ValidationMessageFor(model => model.ContactNo, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @placeholder = "Enter Password", @class = "form-control", @type = "password", @id = "password" } })
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="button" id="btnSubmit" value="" onclick="Add()" class="btn btn-gradient-primary mr-2" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card">
+
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-dark" align="center">
+                            <tr>
+                                <th>
+                                    Action
+                                </th>
+                                <th>
+                                    Company Name
+                                </th>
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    Password
+                                </th>
+                                <th>
+                                    Contact No
+                                </th>
+                                <th>
+                                    Active
+                                </th>
+                                <th>
+                                    Creation Date
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="loading">
+    <img id="loading-image" src="~/Content/spinner/Spinner-3.gif" alt="Loading..." />
+</div>
+<style>
+    #loading {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: block;
+        opacity: 0.7;
+        background-color: #fff;
+        z-index: 99;
+        text-align: center;
+    }
+
+    #loading-image {
+        position: absolute;
+        top: 350px;
+        left: 750px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+    }
+</style>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#loading").show();
+       $("#cname").val("");
+       $("#email").val("");
+       $("#contact").val("");
+       $("#password").val("");
+       $("#btnSubmit").prop("value", "Register");
+       $("#myForm").validate();
+       $("#Id").val("");
+        LoadData();
+        $("#loading").hide();
+        $(document).on("mouseover", "tr.rows td", function (e) {
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    });
+    function LoadData()
+    {
+        $.ajax({
+            url:'@Url.Action("GetData", "SuperAdmin")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                var html = '';
+                $.each(result, function (key, item) {
+
+                    html += '<tr class="rows">';
+                    html += '<td><a href="#" onclick="return getbyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit"></i></a> | <a href="#" onclick="return Delete(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>';
+                    html += '<td>' + item.CompanyName + '</td>';
+                    html += '<td>' + item.Email + '</td>';
+                    html += '<td>' + item.Password + '</td>';
+                    html += '<td>' + item.ContactNo + '</td>';
+                    html += '<td>' + item.IsActive + '</td>';
+                    html += '<td>' + new Date(parseInt(item.CreatedDate))   + '</td>';
+                   
+                    html += '</tr>';
+                });
+                $('.tbody').html(html);
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function getbyID(id) {
+        $("#loading").show();
+        $.ajax({
+            url:'@Url.Action("GetById", "SuperAdmin")',
+            type: 'GET',
+            data: {Id : id},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                $("#Id").val(result.Id);
+
+                $("#cname").val(result.CompanyName);
+                $("#email").val(result.Email);
+                $("#contact").val(result.ContactNo);
+                $("#password").val(result.Password);
+                $("#btnSubmit").prop("value", "Update");
+                $("#loading").hide();
+            },
+            error: function (errormessage) {
+                $("#loading").hide();
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function Delete(id) {
+        $("#loading").show();
+       $.ajax({
+                url:'@Url.Action("Delete", "SuperAdmin")',
+                type: 'GET',
+                data: {Id : id},
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+           success: function (result) {
+               $("#loading").hide();
+                    swal({
+                        title: "Delete",
+                        text: "Delete company success",
+                        imageUrl: 'thumbs-up.jpg'
+                    });
+                    LoadData();
+                    $("#Id").val("");
+            },
+           error: function (errormessage) {
+               $("#loading").hide();
+                alert(errormessage.responseText);
+            }});
+    }
+
+   function Add()
+     {
+       $("#loading").show();
+      $.ajax({
+        type: "POST",
+          url: '@Url.Action("Register", "SuperAdmin")',
+          dataType:'json',
+        data: { Id: $("#Id").val(),CompanyName: $("#cname").val(), Email: $("#email").val(), Contact: $("#contact").val(), Password: $("#password").val() },
+
+          success: function (statuscode) {
+
+              if (statuscode == true)
+              {
+                  $("#loading").hide();
+
+                swal({
+                    title: "Success!",
+                    message:"new Company Added Success!!!!!"
+                });
+              }
+              else
+              {
+                  $("#loading").hide();
+                  swal({
+                      title: "Failure!",
+                      message:"Company Already Exists!!!!!"
+                  });
+              }
+            LoadData();
+              $("#Id").val("");
+              $("#cname").val("");
+              $("#email").val("");
+              $("#contact").val("");
+              $("#password").val("");
+              $("#btnSubmit").prop("value", "Add");
+        }
+    });
+    }
+</script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

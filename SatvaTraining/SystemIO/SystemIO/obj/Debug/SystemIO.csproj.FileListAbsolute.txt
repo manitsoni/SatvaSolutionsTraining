@@ -1,0 +1,7 @@
+D:\SatvaTraining\SystemIO\SystemIO\bin\Debug\SystemIO.exe.config
+D:\SatvaTraining\SystemIO\SystemIO\bin\Debug\SystemIO.exe
+D:\SatvaTraining\SystemIO\SystemIO\bin\Debug\SystemIO.pdb
+D:\SatvaTraining\SystemIO\SystemIO\obj\Debug\SystemIO.csprojAssemblyReference.cache
+D:\SatvaTraining\SystemIO\SystemIO\obj\Debug\SystemIO.csproj.CoreCompileInputs.cache
+D:\SatvaTraining\SystemIO\SystemIO\obj\Debug\SystemIO.exe
+D:\SatvaTraining\SystemIO\SystemIO\obj\Debug\SystemIO.pdb

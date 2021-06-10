@@ -1,0 +1,46 @@
+﻿@model Core.ViewModel.CompanyViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<table class="table table-hover">
+    <thead class="thead-dark" align="center">
+        <tr>
+            <th>
+                Company Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Password
+            </th>
+            <th>
+                Contact No
+            </th>
+            <th>
+                Active
+            </th>
+            <th>
+                Creation Date
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody class="tbody">
+        @foreach (var item in ViewBag.Data)
+        {
+            <tr>
+                <td>@item.CompanyName</td>
+                <td>@item.Email</td>
+                <td>@item.Password</td>
+                <td>@item.ContactNo</td>
+                <td>@item.IsActive</td>
+                <td>@item.CreatedDate</td>
+                <td><a href="~/Home/Edit?id=@item.Id" class="btn btn-info">Edit</a> | <a href="~/Home/Delete?id=@item.Id" class="btn btn-danger">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

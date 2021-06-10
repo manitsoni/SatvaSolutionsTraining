@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+<form action="~/Home/Login" method="post">
+    <input type="email" name="Email" id="Email" placeholder="Enter Email" /><br />
+    <input type="password" name="Password" id="Password" value="" placeholder="Enter Password" />
+    <input type="submit" value="Login" class="btn btn-success" />
+</form>
+
+<div>
+    @Html.ActionLink("Register", "Register")
+</div>

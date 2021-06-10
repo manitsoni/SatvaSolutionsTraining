@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Jquery Introduction</title>
+</head>
+<body>
+	<input type="button" name="" class="btnShow" value="Hide">
+	<input type="button" name="" class="btnFillColor" value="Change Color">
+	<input type="button" name="" class="btnBefore" value="before">
+	<input type="button" name="" class="btnAfter" value="after">
+	<p>Hello this is jquery example</p>
+	<ul>
+		<li>Hello</li>
+		<li>How are you</li>
+		<li>I am fine</li>
+		<li>Where are you from</li>
+		<li>I am from mandal</li>
+		<li>Are you available?</li>
+		<li>Yes i am available</li>
+	</ul>
+	<div style="background:#98bf21;height:100px;width:100px;position:absolute;">
+		
+	</div>
+	<script>
+		$(document).ready(function(){
+			debugger
+			var div = $('div');
+			div.animate({
+				left : '500px'
+			});
+			
+
+			var status;
+			$(".btnShow").click(function(){
+				if(status=="show")
+				{
+					status="hide";
+					$(".btnShow").prop("value","Hide");
+					$("p").fadeIn("slow");
+					$("ul li").fadeIn("slow");
+				}
+				else
+				{
+					status ="show";
+					$(".btnShow").prop("value","Show");
+					$("p").hide("slow");
+					$("ul li").fadeOut();
+				}
+				
+			});
+			$(".btnFillColor").click(function(){
+				try{
+					var color_name = prompt("Enter color name to fill in paragraph");
+					$("p").css({"background-color":color_name});
+					$("ul li").css({"background":color_name});
+				}
+				catch(err){
+					alert(err);
+				}
+				
+			});
+			$(".btnBefore").click(function(){
+
+				$("p").before("<li>Manit Hinkal</li>");
+			});
+			$(".btnAfter").click(function(){
+				$("p").after("<li>Hinkal Manit</li>");
+			});
+		});
+	</script>
+</body>
+</html>

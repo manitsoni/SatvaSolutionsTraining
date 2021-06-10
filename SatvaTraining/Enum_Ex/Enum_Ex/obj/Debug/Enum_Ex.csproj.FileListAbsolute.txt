@@ -1,0 +1,7 @@
+E:\Manit\SatvaTraining\Enum_Ex\Enum_Ex\bin\Debug\Enum_Ex.exe.config
+E:\Manit\SatvaTraining\Enum_Ex\Enum_Ex\bin\Debug\Enum_Ex.exe
+E:\Manit\SatvaTraining\Enum_Ex\Enum_Ex\bin\Debug\Enum_Ex.pdb
+E:\Manit\SatvaTraining\Enum_Ex\Enum_Ex\obj\Debug\Enum_Ex.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\Enum_Ex\Enum_Ex\obj\Debug\Enum_Ex.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\Enum_Ex\Enum_Ex\obj\Debug\Enum_Ex.exe
+E:\Manit\SatvaTraining\Enum_Ex\Enum_Ex\obj\Debug\Enum_Ex.pdb

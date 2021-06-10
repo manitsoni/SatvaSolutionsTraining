@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="FileUploadDownloadModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="tblFile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FileName" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="tblFileDownload">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FileId" Type="int" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="DownloadedTime" Type="datetime" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblRegister">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <Association Name="FK_tblFileDownload_tblFile">
+          <End Role="tblFile" Type="Self.tblFile" Multiplicity="0..1" />
+          <End Role="tblFileDownload" Type="Self.tblFileDownload" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblFile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="tblFileDownload">
+              <PropertyRef Name="FileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblFileDownload_tblRegister">
+          <End Role="tblRegister" Type="Self.tblRegister" Multiplicity="0..1" />
+          <End Role="tblFileDownload" Type="Self.tblFileDownload" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRegister">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="tblFileDownload">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FileUploadDownloadModelStoreContainer">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblFile" EntityType="Self.tblFile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblFileDownload" EntityType="Self.tblFileDownload" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRegister" EntityType="Self.tblRegister" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tblFileDownload_tblFile" Association="Self.FK_tblFileDownload_tblFile">
+            <End Role="tblFile" EntitySet="tblFile" />
+            <End Role="tblFileDownload" EntitySet="tblFileDownload" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblFileDownload_tblRegister" Association="Self.FK_tblFileDownload_tblRegister">
+            <End Role="tblRegister" EntitySet="tblRegister" />
+            <End Role="tblFileDownload" EntitySet="tblFileDownload" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FileUploadDownloadModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="FileUploadDownloadEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="FileUploadDownloadModel.sysdiagram" />
+          <EntitySet Name="tblFiles" EntityType="FileUploadDownloadModel.tblFile" />
+          <EntitySet Name="tblFileDownloads" EntityType="FileUploadDownloadModel.tblFileDownload" />
+          <EntitySet Name="tblRegisters" EntityType="FileUploadDownloadModel.tblRegister" />
+          <AssociationSet Name="FK_tblFileDownload_tblFile" Association="FileUploadDownloadModel.FK_tblFileDownload_tblFile">
+            <End Role="tblFile" EntitySet="tblFiles" />
+            <End Role="tblFileDownload" EntitySet="tblFileDownloads" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblFileDownload_tblRegister" Association="FileUploadDownloadModel.FK_tblFileDownload_tblRegister">
+            <End Role="tblRegister" EntitySet="tblRegisters" />
+            <End Role="tblFileDownload" EntitySet="tblFileDownloads" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tblFile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblFileDownloads" Relationship="FileUploadDownloadModel.FK_tblFileDownload_tblFile" FromRole="tblFile" ToRole="tblFileDownload" />
+        </EntityType>
+        <EntityType Name="tblFileDownload">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FileId" Type="Int32" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="DownloadedTime" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" />
+          <NavigationProperty Name="tblFile" Relationship="FileUploadDownloadModel.FK_tblFileDownload_tblFile" FromRole="tblFileDownload" ToRole="tblFile" />
+          <NavigationProperty Name="tblRegister" Relationship="FileUploadDownloadModel.FK_tblFileDownload_tblRegister" FromRole="tblFileDownload" ToRole="tblRegister" />
+        </EntityType>
+        <EntityType Name="tblRegister">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+          <NavigationProperty Name="tblFileDownloads" Relationship="FileUploadDownloadModel.FK_tblFileDownload_tblRegister" FromRole="tblRegister" ToRole="tblFileDownload" />
+        </EntityType>
+        <Association Name="FK_tblFileDownload_tblFile">
+          <End Type="FileUploadDownloadModel.tblFile" Role="tblFile" Multiplicity="0..1" />
+          <End Type="FileUploadDownloadModel.tblFileDownload" Role="tblFileDownload" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblFile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="tblFileDownload">
+              <PropertyRef Name="FileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblFileDownload_tblRegister">
+          <End Type="FileUploadDownloadModel.tblRegister" Role="tblRegister" Multiplicity="0..1" />
+          <End Type="FileUploadDownloadModel.tblFileDownload" Role="tblFileDownload" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRegister">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="tblFileDownload">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FileUploadDownloadModelStoreContainer" CdmEntityContainer="FileUploadDownloadEntities">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="FileUploadDownloadModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblFiles">
+            <EntityTypeMapping TypeName="FileUploadDownloadModel.tblFile">
+              <MappingFragment StoreEntitySet="tblFile">
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblFileDownloads">
+            <EntityTypeMapping TypeName="FileUploadDownloadModel.tblFileDownload">
+              <MappingFragment StoreEntitySet="tblFileDownload">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="DownloadedTime" ColumnName="DownloadedTime" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="FileId" ColumnName="FileId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRegisters">
+            <EntityTypeMapping TypeName="FileUploadDownloadModel.tblRegister">
+              <MappingFragment StoreEntitySet="tblRegister">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

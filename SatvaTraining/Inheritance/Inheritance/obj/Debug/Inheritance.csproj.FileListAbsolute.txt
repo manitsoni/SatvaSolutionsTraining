@@ -1,0 +1,7 @@
+D:\SatvaTraining\Inheritance\Inheritance\bin\Debug\Inheritance.exe.config
+D:\SatvaTraining\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+D:\SatvaTraining\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
+D:\SatvaTraining\Inheritance\Inheritance\obj\Debug\Inheritance.csprojAssemblyReference.cache
+D:\SatvaTraining\Inheritance\Inheritance\obj\Debug\Inheritance.csproj.CoreCompileInputs.cache
+D:\SatvaTraining\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+D:\SatvaTraining\Inheritance\Inheritance\obj\Debug\Inheritance.pdb

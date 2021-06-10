@@ -1,0 +1,7 @@
+E:\Manit\PartialClass_Ex\PartialClass_Ex\bin\Debug\PartialClass_Ex.exe.config
+E:\Manit\PartialClass_Ex\PartialClass_Ex\bin\Debug\PartialClass_Ex.exe
+E:\Manit\PartialClass_Ex\PartialClass_Ex\bin\Debug\PartialClass_Ex.pdb
+E:\Manit\PartialClass_Ex\PartialClass_Ex\obj\Debug\PartialClass_Ex.csprojAssemblyReference.cache
+E:\Manit\PartialClass_Ex\PartialClass_Ex\obj\Debug\PartialClass_Ex.csproj.CoreCompileInputs.cache
+E:\Manit\PartialClass_Ex\PartialClass_Ex\obj\Debug\PartialClass_Ex.exe
+E:\Manit\PartialClass_Ex\PartialClass_Ex\obj\Debug\PartialClass_Ex.pdb

@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewBag.Title = "EmployeeList";
+    Layout = "~/Views/Shared/_EmployeeLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+
+            <div class="card-body">
+
+
+                <form class="form-inline">
+                    <a href="~/EmployeeManager/AddEmployee" class="btn btn-gradient-success form-control mb-2 mr-sm-2"><i class="fa fa-plus"></i>Add Employee</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <select class="form-control  mb-2 mr-sm-2" id="Category" onchange="BindPlaceHolder()">
+                        <option value="0">Select Category</option>
+                        <option value="1">ID</option>
+                        <option value="2">Name</option>
+                        <option value="3">Email</option>
+                        <option value="4">City</option>
+                        <option value="5">State</option>
+                        <option value="6">Country</option>
+                    </select>
+                    <div class="input-group mb-1 mr-sm-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-search"></i></div>
+                        </div>
+                        <input type="text" onkeyup="Search()" class="form-control" id="Query" placeholder="Search HERE.....">
+
+                    </div>
+
+                </form>
+
+                <br />
+                <br />
+                <div class="table-responsive">
+
+                    <table class="table table-light">
+                        <thead class="thead-light" align="center">
+                            <tr>
+                                <th>
+                                    Image
+                                </th>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    Country
+                                </th>
+                                <th>
+                                    State
+                                </th>
+                                <th>
+                                    City
+                                </th>
+                                <th>
+                                    Trainee
+                                </th>
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content"></div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function () {
+        GetAll();
+        debugger;
+        var message = '@TempData["msg"]';
+        console.log(message);
+        if (message == "") {
+
+        } else {
+            swal({
+                title: "Welcome!",
+                text: message
+            });
+        }
+        
+
+     });
+    function BindPlaceHolder()
+    {
+        var selectedText = $("#Category option:selected").html();
+        $("#Query").prop("placeholder", "Search By " + selectedText);
+    }
+    function Search() {
+        var Choice = $("#Category").val();
+        var Query = $("#Query").val();
+        if (Query == "") {
+            GetAll();
+        }
+        else if (Choice > 0 && Query == "") {
+            GetAll();
+        } else {
+             $.ajax({
+            url:'@Url.Action("FilterEmployee", "EmployeeManager")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            data: { Choice: Choice, Query: Query },
+            beforeSend: function () {
+                $("#content").html('<img src="~/Content/spinner/Spinner-3.gif">');
+            },
+            success: function (result) {
+                var html = '';
+                $.each(result, function (key, item) {
+
+                    html += '<tr align="center">';
+                    html += '<td class="py-1">' + '<img src="/Content/Photo/' + item.Photo + '" />' + '</td>'
+                    html += '<td>' + item.Id + '</td>';
+                    html += '<td>' + item.FirstName + ' ' + item.MiddleName + ' ' + item.LastName + '</td>';
+                    html += '<td>' + item.Email + '</td>';
+                    html += '<td>' + item.Countryname + '</td>';
+                    html += '<td>' + item.Statename + '</td>';
+                    html += '<td>' + item.Cityname + '</td>';
+                    html += '<td>' + item.IsTrainee + '</td>';
+
+                    html += '<td><button onclick="return getbyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit sm"></i></button> | <button onclick="return Delete(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>';
+                    html += '</tr>';
+
+                });
+                $('.tbody').html(html);
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+        }
+
+    }
+     function GetAll() {
+        $.ajax({
+            url:'@Url.Action("GetAllEmployee", "EmployeeManager")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+
+            success: function (result) {
+                var html = '';
+                $.each(result, function (key, item) {
+
+                    html += '<tr align="center">';
+                    html += '<td class="py-1">' + '<img src="/Content/Photo/' + item.Photo + '" />' + '</td>'
+                    html += '<td>' + item.Id + '</td>';
+                    html += '<td>' + item.FirstName + ' ' + item.MiddleName+' '  + item.LastName + '</td>';
+                    html += '<td>' + item.Email + '</td>';
+                    html += '<td>' + item.Countryname + '</td>';
+                    html += '<td>' + item.Statename + '</td>';
+                    html += '<td>' + item.Cityname + '</td>';
+                    html += '<td>' + item.IsTrainee + '</td>';
+
+                    html += '<td><button onclick="return getbyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit sm"></i></button> | <button onclick="return Delete(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>';
+                    html += '</tr>';
+
+                });
+                $('.tbody').html(html);
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+</script>

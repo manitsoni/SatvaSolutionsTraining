@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="~/Content/jsapi.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.min.js" integrity="sha512-bztGAvCE/3+a1Oh0gUro7BHukf6v7zpzrAb3ReWAVrt+bVNNphcl2tDTKCBr5zk7iEDmQ2Bv401fX3jeVXGIcA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.js" integrity="sha512-4WpSQe8XU6Djt8IPJMGD9Xx9KuYsVCEeitZfMhPi8xdYlVA5hzRitm0Nt1g2AZFS136s29Nq4E4NVvouVAVrBw==" crossorigin="anonymous"></script>
+
+<div class="row">
+    <div class="col-md-12">
+        Please verify your email!
+    </div>
+    <div class="col-md-12">
+        Please Cleck Here To <button class="btn btn-link" onclick="ReSendEmail()">Resend Email</button>
+    </div>
+</div>
+
+<div id="loading">
+    <img id="loading-image" src="~/Content/spinner/Spinner-3.gif" alt="Loading..." />
+</div>
+
+<style>
+    #loading {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: block;
+        opacity: 0.7;
+        background-color: #fff;
+        z-index: 99;
+        text-align: center;
+    }
+
+    #loading-image {
+        position: absolute;
+        top: 350px;
+        left: 750px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+    }
+</style>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function () {
+        ReSendEmail();
+        $('#loading').hide();
+
+    });
+</script>
+<script>
+   function ReSendEmail() {
+        $('#loading').show();
+        $.ajax({
+            url: '@Url.Action("ResendEmail", "EmployeeManager")',
+            type: 'GET',
+            dataType: 'json',
+            success: function (result) {
+                swal({
+                    title: "Success!",
+                    text: "Email Link Sent Successfully."
+                });
+                $('#loading').hide();
+            },
+            error: function (error) {
+                $('#loading').hide();
+                alert(error.responseText);
+
+            }
+        });
+    }
+</script>

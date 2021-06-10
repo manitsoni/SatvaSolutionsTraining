@@ -1,0 +1,7 @@
+E:\Manit\SatvaTraining\Prop_Get_Set_Ex\Prop_Get_Set_Ex\obj\Debug\Prop_Get_Set_Ex.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\Prop_Get_Set_Ex\Prop_Get_Set_Ex\obj\Debug\Prop_Get_Set_Ex.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\Prop_Get_Set_Ex\Prop_Get_Set_Ex\bin\Debug\Prop_Get_Set_Ex.exe.config
+E:\Manit\SatvaTraining\Prop_Get_Set_Ex\Prop_Get_Set_Ex\bin\Debug\Prop_Get_Set_Ex.exe
+E:\Manit\SatvaTraining\Prop_Get_Set_Ex\Prop_Get_Set_Ex\bin\Debug\Prop_Get_Set_Ex.pdb
+E:\Manit\SatvaTraining\Prop_Get_Set_Ex\Prop_Get_Set_Ex\obj\Debug\Prop_Get_Set_Ex.exe
+E:\Manit\SatvaTraining\Prop_Get_Set_Ex\Prop_Get_Set_Ex\obj\Debug\Prop_Get_Set_Ex.pdb

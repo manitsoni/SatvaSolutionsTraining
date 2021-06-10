@@ -1,0 +1,926 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_SuperAdmin.cshtml";
+}
+<div class="row">
+    <div class="col-md-4 ">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" align="center">Add Country</h4>
+
+                <form class="form-group" id="myForm" action="#" method="post">
+
+
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <input type="hidden" id="cid" name="name" value="" />
+                            <div class="col-md-12">
+                                <input type="text" name="txtCountry" id="txtCountry" value="" placeholder="Enter Country Name" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="button" id="btnCountry" value="Add" onclick="AddCountry()" class="btn btn-gradient-primary mr-2" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 ">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" align="center">Add State</h4>
+
+                <form class="form-group" id="myForm1" action="#" method="post">
+                    <input type="hidden" id="sid" name="name" value="" />
+
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                @Html.DropDownList("Id", (IEnumerable
+           <SelectListItem>)ViewBag.clist, "--Select Country--", new { @class = "form-control", @id = "DdCountry" })
+
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <input type="text" name="txtState" value="" id="txtState" class="form-control" required placeholder="Enter State Name" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="button" id="btnState" value="Add" onclick="AddState()" class="btn btn-gradient-primary mr-2" />
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 ">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" align="center">Add City</h4>
+
+                <form class="form-group" id="myForm2" action="#" method="post">
+
+
+                    <div class="form-horizontal">
+                        <div class="row">
+                            <input type="hidden" id="ctid" value="" />
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.DropDownList("DdCountry1", (IEnumerable
+            <SelectListItem>)ViewBag.clist, "--Select Country--", new { @class = "form-control", @onchange = "LoadStateToDD();", @id = "DdCountry1" })
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.DropDownList("DdState", (IEnumerable
+              <SelectListItem>)ViewBag.clist, "--Select State--", new { @class = "form-control", @id = "DdState" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" name="txtCity" id="txtCity" value="" class="form-control" required placeholder="Enter City Name" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="button" id="btnCity" value="Add" onclick="AddCity()" class="btn btn-gradient-primary mr-2" />
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<br />
+<button type="button" id="btnReload" onclick="Reload()" class="btn btn-gradient-dark mr-2">Reload</button>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <br />
+        <div class="card">
+
+            <div class="card-body">
+                <div class="table-responsive">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            Country :
+                        </div>
+
+                    </div>
+                    <br />
+                    <table class="table table-hover" id="tbl1">
+                        <thead class="thead-light" align="center">
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+
+                                <th>
+                                    Country Name
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <br />
+        <div class="card">
+
+            <div class="card-body">
+                <div class="table-responsive">
+                    <div class="row">
+                        <div class="col-md-4">
+                            State
+                        </div>
+                        <div class="col-md-8">
+                            @Html.DropDownList("Id", (IEnumerable<SelectListItem>)ViewBag.clist, "Show All", new { @class = "form-control", @onchange = "GetSById();", @id = "DdCountry3" })
+                        </div>
+
+                    </div>
+                    <br />
+                    <table class="table table-hover">
+                        <thead class="thead-light" align="center">
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+
+                                <th>
+                                    Country Name
+                                </th>
+                                <th>
+                                    State Name
+                                </th>
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody1">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <br />
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <p>City :  </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DropDownList("Id", (IEnumerable<SelectListItem>)ViewBag.clist, "Show All", new { @class = "form-control", @onchange = "LoadStateToDD2();", @id = "DdCountry4" })
+                        </div>
+                        <div class="col-md-6">
+                            @Html.DropDownList("Id", (IEnumerable<SelectListItem>)ViewBag.clist, "Show All", new { @class = "form-control", @onchange = "GetCityByState();", @id = "DdState2" })
+                        </div>
+
+                    </div>
+                    <br />
+                    <table class="table table-hover">
+                        <thead class="thead-light" align="center">
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    City Name
+                                </th>
+                                <th>
+                                    State Name
+                                </th>
+                                <th>
+                                    Country Name
+                                </th>
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody2">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="loading">
+    <img id="loading-image" src="~/Content/spinner/Spinner-3.gif" alt="Loading..." />
+</div>
+<style>
+    #loading {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: block;
+        opacity: 0.7;
+        background-color: #fff;
+        z-index: 99;
+        text-align: center;
+    }
+
+    #loading-image {
+        position: absolute;
+        top: 350px;
+        left: 750px;
+        z-index: 100;
+        width: 50px;
+        height: 50px;
+    }
+</style>
+<script src="http://www.google.com/jsapi"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script>
+    //Country
+    $(document).ready(function () {
+       $('#loading').show();
+       $("#btnCountry").prop("value", "Add");
+       LoadCountry();
+       LoadCity();
+       LoadState();
+       LoadCountryToDD();
+        $('#loading').hide();
+
+    });
+
+    function Reload() {
+        $('#loading').show();
+        LoadCountry();
+        LoadCity();
+        LoadState();
+        $("#btnStateDelete").hide();
+        $('#loading').hide();
+    }
+    function LoadCountry()
+    {
+        $('#loading').show();
+        $.ajax({
+
+            url:'@Url.Action("GetCountry", "AppHelper")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+
+            success: function (result) {
+                var html = '';
+                var id = 1;
+                $.each(result, function (key, item) {
+
+                    html += '<tr align="center" id="example" onclick="return getbyID(' + item.Id + ')">';
+                    html += '<td>' + id + '</td>';
+
+                    html += '<td>' + item.CountryName + '</td>';
+                    html += '<td><button onclick="return getbyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit sm"></i></button> | <button onclick="return Delete(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>';
+                    html += '</tr>';
+                    id += 1;
+                });
+                $('.tbody').html(html);
+                $('#loading').hide();
+            },
+            error: function (error) {
+                alert(error.responseJSON);
+            }
+            });
+    }
+
+    function getbyID(id) {
+        $('#loading').show();
+        $.ajax({
+            url:'@Url.Action("GetCountryById", "AppHelper")',
+            type: 'GET',
+            data: {Id : id},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                console.log(result);
+                $("#cid").val(result.Id);
+                $("#txtCountry").val(result.CountryName);
+                $("#btnCountry").prop("value", "Update");
+                $('#loading').hide();
+            },
+            error: function (errormessage) {
+                $('#loading').hide();
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function Delete(id) {
+        $('#loading').show();
+       $.ajax({
+                url:'@Url.Action("DeleteCountry", "AppHelper")',
+                type: 'GET',
+                data: {Id : id},
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+           success: function (result) {
+               $('#loading').hide();
+                    swal({
+                        title: "Delete",
+                        text: "Delete country success",
+                        imageUrl: 'thumbs-up.jpg'
+                    });
+                    Reload();
+                    LoadCountryToDD();
+
+            },
+           error: function (errormessage) {
+               $('#loading').hide();
+               Reload();
+               LoadCountryToDD();
+                alert(errormessage.responseText);
+            }});
+    }
+    function AddCountry()
+    {
+      $('#loading').show();
+      $.ajax({
+        type: "POST",
+          url: '@Url.Action("AddCountry", "AppHelper")',
+          data: { Id: $("#cid").val(), CountryName: $("#txtCountry").val() },
+          success: function (statuscode) {
+              $('#loading').hide();
+              if (statuscode == true) {
+
+                    swal({
+                          title: "Success!",
+                          text: "Successfully added new country",
+                          imageUrl: 'thumbs-up.jpg'
+                    });
+                  Reload();
+                  LoadCountryToDD();
+              }
+              else {
+                  swal({
+                      title: "Failure!",
+                      text: "Data already exists!",
+                      imageUrl: 'thumbs-down.jpg'
+                  });
+                  Reload();
+                  LoadCountryToDD();
+              }
+
+              $("#cid").val("");
+              $("#txtCountry").val("");
+              $("#btnCountry").prop("value", "Add");
+          },
+          error: function (errormessage) {
+              $('#loading').hide();
+              swal({
+                  title: "Failure!",
+                  text: errormessage.responseText,
+                  imageUrl: 'thumbs-up.jpg'
+              });
+              Reload();
+              LoadCountryToDD();
+          }
+    });
+    }
+
+    function LoadCountryToDD() {
+        $('#loading').show();
+        var ddcountry = $("#DdCountry");
+        ddcountry.html("").append('<option selected="selected" value="0">Select Country</option>')
+        var ddcountry1 = $("#DdCountry1");
+        ddcountry1.html("").append('<option selected="selected" value="0">Select Country</option>')
+        var ddcountry2 = $("#DdCountry2");
+        ddcountry1.html("").append('<option selected="selected" value="0">Country</option>')
+        var ddcountry3 = $("#DdCountry3");
+        ddcountry1.html("").append('<option selected="selected" value="0">Show All</option>')
+        var ddcountry4 = $("#DdCountry4");
+        ddcountry1.html("").append('<option selected="selected" value="0">Show All</option>')
+         $.ajax({
+            url:'@Url.Action("GetCForDD", "AppHelper")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                $('#loading').hide();
+                $.each(result, function (key, item) {
+                    ddcountry.append($('<option></option>').text(item.CountryName).val(item.Id));
+                    ddcountry1.append($('<option></option>').text(item.CountryName).val(item.Id));
+                    ddcountry2.append($('<option></option>').text(item.CountryName).val(item.Id));
+                    ddcountry3.append($('<option></option>').text(item.CountryName).val(item.Id));
+                    ddcountry4.append($('<option></option>').text(item.CountryName).val(item.Id));
+                });
+                
+            },
+             error: function (errormessage) {
+                 $('#loading').hide();
+                alert(errormessage.responseText);
+            }
+        });
+        
+    }
+    function LoadState()
+    {
+
+        $.ajax({
+            url:'@Url.Action("GetState", "AppHelper")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                var html = '';
+                var id = 1;
+                $.each(result, function (key, item) {
+
+                    html += '<tr align="center" onclick="return getstatebyID(' + item.Id + ')">';
+                    html += '<td>' + id + '</td>';
+                    html += '<td>' + item.StateName + '</td>';
+                    html += '<td>' + item.CountryName + '</td>';
+                    html += '<td><button onclick="return getstatebyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit sm"></i></button> | <button onclick="return DeleteState(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>';
+                    html += '</tr>';
+                    id += 1;
+                });
+                $('.tbody1').html(html);
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function getstatebyID(id) {
+        $("#loading").show();
+        $.ajax({
+            url:'@Url.Action("GetStateById", "AppHelper")',
+            type: 'GET',
+            data: {Id : id},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                $("#loading").hide();
+                $("#sid").val(result.Id);
+                $("#DdCountry").val(result.CountryId);
+                $("#txtState").val(result.StateName);
+                $("#btnStateDelete").show();
+                $("#btnState").prop("value", "Update");
+
+            },
+            error: function (errormessage) {
+                $("#loading").hide();
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function DeleteState(id) {
+        $("#loading").show();
+       $.ajax({
+                url:'@Url.Action("DeleteState", "AppHelper")',
+                type: 'GET',
+                data: {Id : id},
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+           success: function (result) {
+               $("#loading").hide();
+                    swal({
+                        title: "Delete",
+                        text: "Delete state success",
+                        imageUrl: 'thumbs-up.jpg'
+                    });
+                    Reload();
+            },
+           error: function (errormessage) {
+               Reload();
+                alert(errormessage.responseText);
+            }});
+    }
+    function AddState()
+    {
+        $('#loading').show();
+      $.ajax({
+        type: "POST",
+          url: '@Url.Action("AddState", "AppHelper")',
+          data: { Id: $("#sid").val(), CoyntryId: $("#DdCountry").val(), Statename: $("#txtState").val() },
+          success: function (statuscode)
+          {
+              if (statuscode == true) {
+                    swal({
+                          title: "Success!",
+                          text: "Successfully added new state",
+                          imageUrl: 'thumbs-up.jpg'
+                    });
+                  $("#sid").val("");
+                  $("#txtState").val("");
+
+                  $("#btnState").prop("value", "Add");
+
+                  Reload();
+                  $('#loading').hide();
+              }
+              else
+              {
+                  swal({
+                      title: "Failure!",
+                      text: "Data already exists!",
+                      imageUrl: 'thumbs-down.jpg'
+                  });
+                  Reload();
+                  $('#loading').hide();
+              }
+
+
+          },
+          error: function (errormessage) {
+              swal({
+                  title: "Failure!",
+                  text: errormessage.responseText,
+                  imageUrl: 'thumbs-up.jpg'
+              });
+              Reload();
+              $('#loading').hide();
+          }
+    });
+    }
+    function LoadSDD() {
+         var ddstate = $("#DdState1");
+         var cid = $("#DdCountry3").val();
+         ddstate.html("").append('<option selected="selected" value="0">Select State</option>');
+         $.ajax({
+            url:'@Url.Action("GetSForDD", "AppHelper")',
+             type: 'GET',
+             data: { cid : cid},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                $.each(result, function (key, item) {
+                    ddstate.append($('<option></option>').text(item.StateName).val(item.Id));
+
+                });
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function LoadSDD1() {
+         var ddstate = $("#DdState2");
+           var cid = $("#DdCountry").val();
+         ddstate.html("").append('<option selected="selected" value="0">Select State</option>');
+         $.ajax({
+            url:'@Url.Action("GetSForDD", "AppHelper")',
+             type: 'GET',
+             data: { cid : cid},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                $.each(result, function (key, item) {
+                    ddstate.append($('<option></option>').text(item.StateName).val(item.Id));
+
+                });
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function LoadStateToDD() {
+        var ddstate = $("#DdState");
+         var cid = $("#DdCountry1").val();
+         ddstate.html("").append('<option selected="selected" value="0">Select State</option>');
+         $.ajax({
+            url:'@Url.Action("GetSForDD", "AppHelper")',
+             type: 'GET',
+             data: { cid : cid},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                $.each(result, function (key, item) {
+                    ddstate.append($('<option></option>').text(item.StateName).val(item.Id));
+
+                });
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+
+    }
+
+    function LoadStateToDD1() {
+        var ddstate = $("#DdState1");
+         var cid = $("#DdCountry3").val();
+         ddstate.html("").append('<option selected="selected" value="0">Select State</option>');
+         $.ajax({
+            url:'@Url.Action("GetSForDD", "AppHelper")',
+             type: 'GET',
+             data: { cid : cid},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                $.each(result, function (key, item) {
+                    ddstate.append($('<option></option>').text(item.StateName).val(item.Id));
+
+                });
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+
+    }
+    function LoadStateToDD2() {
+        var ddstate = $("#DdState2");
+         var cid = $("#DdCountry4").val();
+         ddstate.html("").append('<option selected="selected" value="0">Show all city</option>');
+         $.ajax({
+            url:'@Url.Action("GetSForDD", "AppHelper")',
+             type: 'GET',
+             data: { cid : cid},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                GetCityByCountry();
+                $.each(result, function (key, item) {
+                    ddstate.append($('<option></option>').text(item.StateName).val(item.Id));
+
+                });
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+
+    }
+    function LoadCity()
+    {
+
+        $.ajax({
+            url:'@Url.Action("GetCity", "AppHelper")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                var html = '';
+                var id = 1;
+                $.each(result, function (key, item) {
+
+                    html += '<tr align="center" onclick="return getcitybyID(' + item.Id + ')">';
+                    html += '<td>' + id + '</td>';
+                    html += '<td>' + item.CityName + '</td>';
+                    html += '<td>' + item.StateName + '</td>';
+                    html += '<td>' + item.CountryName + '</td>';
+                    html += '<td><button onclick="return getcitybyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit sm"></i></button> | <button onclick="return DeleteCity(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>';
+                    html += '</tr>';
+                    id += 1;
+                });
+                $('.tbody2').html(html);
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function getcitybyID(id) {
+        $("#loading").show();
+        $.ajax({
+            url:'@Url.Action("GetCityById", "AppHelper")',
+            type: 'GET',
+            data: {Id : id},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                $("#ctid").val(result.Id);
+                $("#DdCountry1").val(result.CountryId);
+                LoadStateToDD();
+                $("#DdState").val(result.StateId);
+                $("#txtCity").val(result.CityName);
+                $("#btnCity").prop("value", "Update");
+                $("#loading").hide();
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function DeleteCity(id) {
+        $("#loading").show();
+       $.ajax({
+                url:'@Url.Action("DeleteCity", "AppHelper")',
+                type: 'GET',
+                data: {Id : id},
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+           success: function (result) {
+               $("#loading").hide();
+                    swal({
+                        title: "Delete",
+                        text: "Delete state success",
+                        imageUrl: 'thumbs-up.jpg'
+                    });
+                    Reload();
+            },
+           error: function (errormessage) {
+               Reload();
+                alert(errormessage.responseText);
+            }});
+    }
+    function AddCity()
+    {
+        $('#loading').show();
+      $.ajax({
+        type: "POST",
+          url: '@Url.Action("AddCity", "AppHelper")',
+          data: { id: $("#ctid").val(), cid: $("#DdCountry1").val(), sid: $("#DdState").val(), CityName: $("#txtCity").val() },
+          success: function (statuscode)
+          {
+              if (statuscode == true) {
+                    swal({
+                          title: "Success!",
+                          text: "Successfully added new city",
+                          imageUrl: 'thumbs-up.jpg'
+                    });
+                  Reload();
+                  $('#loading').hide();
+              }
+              else
+              {
+                  swal({
+                      title: "Failure!",
+
+                      imageUrl: 'thumbs-down.jpg'
+                  });
+                  Reload();
+                  $('#loading').hide();
+              }
+
+              $("#ctid").val("");
+              $("#txtCity").val("");
+              Reload();
+              $('#loading').hide();
+              $("#btnCity").prop("value", "Add");
+          },
+          error: function (errormessage) {
+              swal({
+                  title: "Failure!",
+                  text: errormessage.responseText,
+                  imageUrl: 'thumbs-up.jpg'
+              });
+              Reload();
+              $('#loading').hide();
+          }
+    });
+    }
+
+    //Filter
+    function GetSById() {
+        var Cid = $("#DdCountry3").val();
+        if (Cid == 0) {
+            LoadState();
+        } else
+        {
+  $.ajax({
+            url:'@Url.Action("GetStateByCountry", "AppHelper")',
+             type: 'GET',
+             data: { cid: Cid },
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                var html = '';
+                var id = 1;
+                $.each(result, function (key, item) {
+
+                    html += '<tr align="center">';
+                    html += '<td>' + id + '</td>';
+                    html += '<td>' + item.StateName + '</td>';
+                    html += '<td>' + item.CountryName + '</td>';
+                    html += '<td><button onclick="return getstatebyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit sm"></i></button> | <button onclick="return DeleteState(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>';
+                    html += '</tr>';
+                    id += 1;
+                });
+                $('.tbody1').html(html);
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+        }
+
+    }
+    function GetCityByState() {
+        var cid = $("#DdCountry4").val();
+        var sid = $("#DdState2").val();
+
+        if (sid == 0 && cid > 0)
+        {
+            GetCityByCountry();
+        }
+        else if (cid == 0)
+        {
+            LoadCity();
+        }
+        else {
+            $.ajax({
+            url:'@Url.Action("GetCityByState", "AppHelper")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            data: { sid: sid },
+            success: function (result) {
+                var html = '';
+                var id = 1;
+                $.each(result, function (key, item) {
+
+                    html += '<tr align="center">';
+                    html += '<td>' + id + '</td>';
+                    html += '<td>' + item.CityName + '</td>';
+                    html += '<td>' + item.StateName + '</td>';
+                    html += '<td>' + item.CountryName + '</td>';
+                    html += '<td><button onclick="return getcitybyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit sm"></i></button> | <button onclick="return DeleteCity(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>';
+                    html += '</tr>';
+                    id += 1;
+                });
+                $('.tbody2').html(html);
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+        }
+    }
+    function GetCityByCountry() {
+        var cid = $("#DdCountry4").val();
+        if (cid == 0)
+        {
+            LoadCity();
+        } else
+        {
+                $.ajax({
+            url:'@Url.Action("GetCityByCountry", "AppHelper")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            data: { cid: cid },
+            success: function (result) {
+                var html = '';
+                var id = 1;
+                $.each(result, function (key, item) {
+
+                    html += '<tr align="center">';
+                    html += '<td>' + id + '</td>';
+                    html += '<td>' + item.CityName + '</td>';
+                    html += '<td>' + item.StateName + '</td>';
+                    html += '<td>' + item.CountryName + '</td>';
+                    html += '<td><button onclick="return getcitybyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit sm"></i></button> | <button onclick="return DeleteCity(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>';
+                    html += '</tr>';
+                    id += 1;
+                });
+                $('.tbody2').html(html);
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+        }
+
+    }
+</script>

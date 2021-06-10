@@ -1,0 +1,120 @@
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\BL.dll.config
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\BL.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\BL.pdb
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\AutoMapper.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\BE.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Common.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Data.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.Helpers.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.Mvc.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.Razor.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Unity.Abstractions.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Unity.Container.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Unity.Mvc5.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\EntityFramework.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\BE.pdb
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Common.pdb
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Data.pdb
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Data.dll.config
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\AutoMapper.xml
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.Helpers.xml
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.Mvc.xml
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.Razor.xml
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.xml
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Unity.Abstractions.pdb
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\Unity.Container.pdb
+D:\Dell\c#\nTireCrudDemo\BL\bin\Debug\EntityFramework.xml
+D:\Dell\c#\nTireCrudDemo\BL\obj\Debug\BL.csprojAssemblyReference.cache
+D:\Dell\c#\nTireCrudDemo\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+D:\Dell\c#\nTireCrudDemo\BL\obj\Debug\BL.csproj.CopyComplete
+D:\Dell\c#\nTireCrudDemo\BL\obj\Debug\BL.dll
+D:\Dell\c#\nTireCrudDemo\BL\obj\Debug\BL.pdb
+E:\New folder\nTireCrudDemo\BL\bin\Debug\BL.dll.config
+E:\New folder\nTireCrudDemo\BL\bin\Debug\BL.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\BL.pdb
+E:\New folder\nTireCrudDemo\BL\bin\Debug\AutoMapper.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\BE.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Common.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Data.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.Helpers.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.Mvc.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.Razor.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Unity.Abstractions.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Unity.Container.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Unity.Mvc5.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\EntityFramework.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\New folder\nTireCrudDemo\BL\bin\Debug\BE.pdb
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Common.pdb
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Data.pdb
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Data.dll.config
+E:\New folder\nTireCrudDemo\BL\bin\Debug\AutoMapper.xml
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.Helpers.xml
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.Mvc.xml
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.Razor.xml
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.xml
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\New folder\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Unity.Abstractions.pdb
+E:\New folder\nTireCrudDemo\BL\bin\Debug\Unity.Container.pdb
+E:\New folder\nTireCrudDemo\BL\bin\Debug\EntityFramework.xml
+E:\New folder\nTireCrudDemo\BL\obj\Debug\BL.csprojAssemblyReference.cache
+E:\New folder\nTireCrudDemo\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+E:\New folder\nTireCrudDemo\BL\obj\Debug\BL.csproj.CopyComplete
+E:\New folder\nTireCrudDemo\BL\obj\Debug\BL.dll
+E:\New folder\nTireCrudDemo\BL\obj\Debug\BL.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\BL.dll.config
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\BL.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\BL.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\AutoMapper.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\BE.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Common.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Data.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.Helpers.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.Mvc.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.Razor.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Unity.Abstractions.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Unity.Container.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Unity.Mvc5.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\EntityFramework.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\BE.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Common.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Data.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Data.dll.config
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\AutoMapper.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.Helpers.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.Mvc.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.Razor.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Unity.Abstractions.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\Unity.Container.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\bin\Debug\EntityFramework.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\obj\Debug\BL.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\obj\Debug\BL.csproj.CopyComplete
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\obj\Debug\BL.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\BL\obj\Debug\BL.pdb

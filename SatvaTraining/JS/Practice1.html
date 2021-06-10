@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction of JS</title>
+</head>
+<body>
+	<p id="pTag"></p>
+	<p id="pTag1"></p>
+	<p id="date"></p>
+	<button onmouseover="func1()">Click Me!</button>
+	<button onclick="window.print()">Print</button>
+	<button onclick="document.write(5 << 1)">documnt.write</button>
+	<script>
+		function func1()
+		{
+			document.getElementById("pTag").innerHTML = "Hello Dolly!";
+			var x = 1;
+			var y = 3 ** 500;
+			a = 1;
+			b = 2;
+	  		document.getElementById("pTag1").innerHTML = a + b;
+	  		var d = new Date(1999,3,24,23,59,60);
+	  		var d1 = Date.parse("2021/1/1");
+	  		var d2 = new Date();
+	  		var d3 = new Date();
+	  		document.getElementById("date").innerHTML = d + " :::::: " +d2.getUTCDate() + " ::::::::::: "+ d3.setFullYear(2020,11,3);;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\Common.dll
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\Common.pdb
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Buffers.dll
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Memory.dll
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Numerics.Vectors.dll
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Text.Encodings.Web.dll
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Buffers.xml
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Memory.xml
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Numerics.Vectors.xml
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Dell\c#\nTireCrudDemo\Common\bin\Debug\System.Text.Encodings.Web.xml
+D:\Dell\c#\nTireCrudDemo\Common\obj\Debug\Common.csprojAssemblyReference.cache
+D:\Dell\c#\nTireCrudDemo\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Dell\c#\nTireCrudDemo\Common\obj\Debug\Common.csproj.CopyComplete
+D:\Dell\c#\nTireCrudDemo\Common\obj\Debug\Common.dll
+D:\Dell\c#\nTireCrudDemo\Common\obj\Debug\Common.pdb
+E:\New folder\nTireCrudDemo\Common\bin\Debug\Common.dll
+E:\New folder\nTireCrudDemo\Common\bin\Debug\Common.pdb
+E:\New folder\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\New folder\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+E:\New folder\nTireCrudDemo\Common\bin\Debug\Microsoft.Extensions.Primitives.dll
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Buffers.dll
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Memory.dll
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Numerics.Vectors.dll
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Text.Encodings.Web.dll
+E:\New folder\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+E:\New folder\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+E:\New folder\nTireCrudDemo\Common\bin\Debug\Microsoft.Extensions.Primitives.xml
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Buffers.xml
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Memory.xml
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Numerics.Vectors.xml
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\New folder\nTireCrudDemo\Common\bin\Debug\System.Text.Encodings.Web.xml
+E:\New folder\nTireCrudDemo\Common\obj\Debug\Common.csprojAssemblyReference.cache
+E:\New folder\nTireCrudDemo\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+E:\New folder\nTireCrudDemo\Common\obj\Debug\Common.csproj.CopyComplete
+E:\New folder\nTireCrudDemo\Common\obj\Debug\Common.dll
+E:\New folder\nTireCrudDemo\Common\obj\Debug\Common.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\Common.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\Common.pdb
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\Microsoft.Extensions.Primitives.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Buffers.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Memory.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Numerics.Vectors.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Text.Encodings.Web.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\Microsoft.Extensions.Primitives.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Buffers.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Memory.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Numerics.Vectors.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\bin\Debug\System.Text.Encodings.Web.xml
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\obj\Debug\Common.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\obj\Debug\Common.csproj.CopyComplete
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\obj\Debug\Common.dll
+E:\Manit\SatvaTraining\nTireCrudDemo\Common\obj\Debug\Common.pdb

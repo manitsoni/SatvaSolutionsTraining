@@ -1,0 +1,179 @@
+﻿@model BE.Department
+@using Common
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_EmployeeLayout.cshtml";
+}
+<div class="row">
+    <div class="col-md-4 ">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title" align="center">Add Department</h4>
+
+                <form class="form-group" id="myForm" action="#" method="post">
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            @Html.HiddenFor(model => model.Id, new { @id = "Id" })
+                            <div class="col-md-12">
+                                @Html.EditorFor(model => model.DepartmentName, new { htmlAttributes = new { @placeholder = "Enter Department Name", @class = "form-control", @name = "department", @id = "department" } })
+                                @Html.ValidationMessageFor(model => model.DepartmentName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="button" id="btnSubmit" value="" onclick="Add()" class="btn btn-gradient-primary mr-2" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card">
+
+            <div class="card-body">
+                <div class="table-responsive">
+                    <p>Company : @SessionProxyUser.CompanyName </p>
+                    <table class="table table-hover">
+                        <thead class="thead-light" align="center">
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+
+                                <th>
+                                    DepartmentName
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+   $(document).ready(function () {
+       $("#btnSubmit").prop("value", "Add");
+       $("#myForm").validate();
+       LoadData();
+    });
+    function LoadData()
+    {
+        $.ajax({
+            url:'@Url.Action("GetDepartments", "DepartmentManager")',
+            type: 'GET',
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                var html = '';
+                var id = 1;
+                $.each(result, function (key, item) {
+
+                    html += '<tr align="center">';
+                    html += '<td>' + id + '</td>';
+
+                    html += '<td>' + item.DepartmentName + '</td>';
+                    html += '<td><button onclick="return getbyID(' + item.Id + ')" class="btn btn-info"><i class="fa fa-edit sm"></i></button> | <button onclick="return Delete(' + item.Id + ')" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>';
+                    html += '</tr>';
+                    id += 1;
+                });
+                $('.tbody').html(html);
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function getbyID(id) {
+        $.ajax({
+            url:'@Url.Action("GetById", "DepartmentManager")',
+            type: 'GET',
+            data: {Id : id},
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                $("#Id").val(result.Id);
+                $("#department").val(result.DepartmentName);
+                $("#btnSubmit").prop("value", "Update");
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function Delete(id) {
+       $.ajax({
+                url:'@Url.Action("Delete", "DepartmentManager")',
+                type: 'GET',
+                data: {Id : id},
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                    swal({
+                        title: "Delete",
+                        text: "Delete department success",
+                        imageUrl: 'thumbs-up.jpg'
+                    });
+                LoadData();
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }});
+    }
+   function Add()
+   {
+      $.ajax({
+        type: "POST",
+          url: '@Url.Action("AddDepartmenr", "DepartmentManager")',
+          data: { Id: $("#Id").val(), DepartmentName: $("#department").val() },
+          success: function (statuscode) {
+            
+              if (statuscode == true) {
+                    swal({
+                          title: "Success!",
+                          text: "Successfully added new department",
+                          imageUrl: 'thumbs-up.jpg'
+                      });
+              }
+              else {
+                  swal({
+                      title: "Failure!",
+                      text: "Data already exists!",
+                      imageUrl: 'thumbs-down.jpg'
+                  });
+              }
+
+              $("#Id").val("");
+              $("#department").val("");
+              LoadData();
+              $("#btnSubmit").prop("value", "Add");
+          },
+          error: function (errormessage) {
+              swal({
+                  title: "Failure!",
+                  text: errormessage.responseText,
+                  imageUrl: 'thumbs-up.jpg'
+              });
+              LoadData();
+          }
+    });
+    }
+</script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

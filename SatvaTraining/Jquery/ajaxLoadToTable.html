@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Load to table</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<br><br>
+	<div class="container">
+		<div class="row">
+		<div class="col-md-2">
+			<button id="loadData" class="btn btn-info">Load Data</button>
+			
+		</div>
+		<div class="col-md-6">
+			<table class="table table-hover">
+				<tr>
+					<th>Name</th>
+					<th>UserName</th>
+					<th>Email</th>
+				</tr>
+				<tbody class="tbody">
+					
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-4">
+			<button class="btn btn-success" id="btnLogin">Login</button>
+			<button class="btn btn-info" id="btnSp">Sign-UP</button>
+			<br><br>
+			<div class="card" style="width: 18rem;" id="login">
+			  <div class="card-body">
+			    <h5 class="card-title">Login</h5>
+			   <button class="btn btn-info">Login</button>
+			   <button class="btn btn-danger" id="cLogin">Close</button>
+			  </div>
+			</div>
+			<div class="card" style="width: 18rem;" id="signup">
+
+			  <div class="card-body">
+			    <h5 class="card-title">Signup</h5>
+			   
+			    <button class="btn btn-info">Sign-up</button>
+			    <button class="btn btn-danger" id="cSignup">Close</button>
+			  </div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="row" >
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-7">
+			
+		</div>
+		<div class="col-md-4">
+			
+		</div>
+		
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("#login").hide();
+			$("#signup").hide();
+			var sts;
+			$("#loadData").click(function(){
+				LoadData();
+			});
+			$("#btnLogin").click(function(){
+				if(status=="show")
+				{
+					status="hide";
+					$("#login").fadeToggle();
+					$("#signup").hide();
+				}
+				else
+				{
+					status ="show";
+					$("#login").fadeOut();
+				}
+				
+			});
+			$("#btnSp").click(function(){
+				if (sts=="show") 
+				{
+					sts="hide";
+					$("#signup").fadeToggle();
+					$("#login").hide();
+
+				}
+				else
+				{
+					sts= "show";
+					$("#signup").hide();
+					$("#login").hide()
+				}
+			});
+			$("#cLogin").click(function(){
+				$('#login').fadeOut();
+			});
+			$("#cSignup").click(function(){
+				$("#signup").fadeOut();
+			});
+		});
+		function LoadData(){
+			$.ajax({
+				url:'https://avgo46q0a3.api.quickmocker.com/userData',
+				type:'GET',
+
+				dataType:'json',
+				success:function(result){
+					var html ='';
+					$.each(result, function(key, item){
+						html +="<tr>"
+					
+						html += "<td>" +item.id+"</td>";
+						html += "<td>"+item.name+"</td>";
+						html += "<td>" +item.email +"</td>";
+						
+						html += "</tr>";
+					});
+					$(".tbody").html(html);
+				},
+				error:function(error){
+					alert(error.errorMessage);
+				}
+			})
+		}
+		function AddData(){
+			$.ajax({
+				url:'https://avgo46q0a3.api.quickmocker.com/userData',
+				type:'POST',
+				"Content-Type": "application/json",
+				dataType:'json',
+				data:{"id":"3","name":"parth","email":"parthsoni369@gmail.com"},
+				success:function(response){
+					alert("Added");
+				},error: function(error){
+					alert("Not Added");
+				}
+			})
+		}
+	</script>
+</body>
+</html>

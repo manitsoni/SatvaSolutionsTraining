@@ -1,0 +1,57 @@
+﻿@model FileUploadDownload.Models.FileList
+@{
+    ViewBag.Title = "Home Page";
+}
+<br /><br />
+      <div class="row">
+         
+          <div class="col-md-7">
+              
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-6">
+                          @using (Html.BeginForm("AddFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                          {
+                              @Html.AntiForgeryToken()
+                              <div class="col-sm-9">
+                                  <input type="file" id="File" name="File" class="form-control" />
+                                  @Html.ValidationMessageFor(model => model.File, "", new { @class = "text-danger" })
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <br />
+                                      <input type="submit" name="name" class="btn btn-success" value="Upload" />
+                                  </div>
+                              </div>
+                          }
+                      </div>
+                  </div>
+              </div>
+          </div>
+            
+          <div class="col-md-5">
+              <h3>File List</h3>  
+              <table class="table table-bordered">
+                  <thead>
+                      <tr>
+                          <th>Id</th>
+                          <th>File</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  @foreach (var item in ViewBag.data)
+                  {
+                      FileInfo fi = new FileInfo(item.FileName);
+                      string ext = fi.Extension;
+
+                      <tr>
+                          <td>@item.Id</td>
+                          <td>
+                              <img src="~/Content/Photo/@item.FileName" width="50" height="50" alt="Image......" />
+                          </td>
+                          <td><a href="~/Home/Download?filename=@item.FileName">Download</a></td>
+                      </tr>
+                  }
+              </table>
+          </div>
+      </div>

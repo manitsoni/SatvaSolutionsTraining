@@ -1,0 +1,12 @@
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\bin\Debug\Core.dll.config
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\bin\Debug\Core.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\bin\Debug\Core.pdb
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\bin\Debug\EntityFramework.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\bin\Debug\EntityFramework.xml
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\obj\Debug\Core.csproj.CopyComplete
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\obj\Debug\Core.dll
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\obj\Debug\Core.pdb
+E:\Manit\SatvaTraining\Onion_Architecture_Ex\Core\obj\Debug\Core.csprojAssemblyReference.cache
