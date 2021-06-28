@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,12 @@ namespace Prop_Get_Set_Ex
     {
         static void Main(string[] args)
         {
+            StreamWriter sw = null;
+            sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\LogFile.txt", true);
+            sw.WriteLine(DateTime.Now.ToString() + " " + "Hello");
+            sw.Flush();
+            sw.Close();
+
             GetSet g = new GetSet();
             RefactorMethodEx(g);
             GetVal g1 = new GetVal();

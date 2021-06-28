@@ -1,0 +1,11 @@
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\bin\Debug\DemoService_Ex.exe.config
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\bin\Debug\DemoService_Ex.exe
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\bin\Debug\DemoService_Ex.pdb
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\obj\Debug\DemoService_Ex.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\obj\Debug\DemoService_Ex.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\obj\Debug\DemoService_Ex.exe
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\obj\Debug\DemoService_Ex.pdb
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\bin\Debug\DemoService_Ex.exe.manifest
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\bin\Debug\DemoService_Ex.application
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\obj\Debug\DemoService_Ex.exe.manifest
+E:\Manit\SatvaTraining\DemoService_Ex\DemoService_Ex\obj\Debug\DemoService_Ex.application

@@ -1,0 +1,68 @@
+﻿Installing assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog
+Installing service Test Window Service...
+Creating EventLog source Test Window Service in log Application...
+Rolling back assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog
+Restoring event log to previous state for source Test Window Service.
+An exception occurred during the Rollback phase of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security, State.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Installing assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog
+Installing service Test Window Service...
+Creating EventLog source Test Window Service in log Application...
+Rolling back assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog
+Restoring event log to previous state for source Test Window Service.
+An exception occurred during the Rollback phase of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security, State.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Installing assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog
+Installing service Test Window Service...
+Creating EventLog source Test Window Service in log Application...
+Rolling back assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog
+Restoring event log to previous state for source Test Window Service.
+Installing assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog
+Rolling back assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog
+Installing assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog
+Installing service Demoservice...
+Service Demoservice has been successfully installed.
+Creating EventLog source Demoservice in log Application...
+Committing assembly 'E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.exe
+   logfile = E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Release\MyService_Ex.InstallLog

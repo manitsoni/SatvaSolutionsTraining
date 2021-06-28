@@ -1,0 +1,148 @@
+﻿@model HtmlHelpers_Ex.Models.Userinformation
+@using HtmlHelpers_Ex.Models
+@{
+    ViewBag.Title = "Create";
+}
+<h2>User Information</h2>
+<br />
+@using (Html.BeginForm("Create", "Home", FormMethod.Post, new { @id = "userForm" }))
+{
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+<div class="row">
+    <div class="col-md-12">
+
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name)
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <input type="text" name="datetime" id="datetime" class="form-control" value="" />
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email)
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password)
+            @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+        </div>
+    </div><br />
+    <div class="col-md-12">
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.Education)*@
+            @Html.DropDownListFor(model => model.Education, new SelectList((Enum.GetValues(typeof(Userinformation.education)))), "---Select Education---", new { @class = "form-control", @id = "Education", @name = "education[]" })
+            @Html.ValidationMessageFor(model => model.Education, "", new { @class = "text-danger" })
+        </div>
+
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.Hobbies)*@
+            @Html.DropDownListFor(model => model.Hobbies, new SelectList(Enum.GetValues(typeof(Userinformation.hobbies))), new { @class = "form-control", @id = "hobby", @multiple = "multiple", @name = "hobby[]" })
+            @Html.ValidationMessageFor(model => model.Hobbies, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Gender)
+            @Html.RadioButtonFor(model => model.Gender, "Male", new { @class = "form-check-input", @id = "male" })
+            <label class="form-check-label" for="male">
+                Male
+            </label>
+            @Html.RadioButtonFor(model => model.Gender, "Female", new { @class = "form-check-input", @id = "female" })
+            <label class="form-check-label" for="female">
+                Female
+            </label>
+            @Html.RadioButtonFor(model => model.Gender, "Unknown", new { @class = "form-check-input", @id = "unknown" })
+            <label class="form-check-label" for="unknown">
+                Unkonwn
+            </label>
+            @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Date)
+            @Html.TextBoxFor(model => model.Date, new { @class = "form-control", @placeholder = "DOB", @id = "date", @readonly = "true" })
+            @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            @Html.LabelFor(model => model.IsActive)
+            @Html.CheckBoxFor(modol => Model.IsActive, new { @class = "form-check-input" })
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <input type="submit" name="name" value="Submit" class="btn btn-success" />
+    </div>
+</div>
+}
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css" integrity="sha512-3//o69LmXw00/DZikLz19AetZYntf4thXiGYJP6L49nziMIhp6DVrwhkaQ9ppMSy8NWXfocBwI3E8ixzHcpRzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.css" integrity="sha512-7/BfnxW2AdsFxJpEdHdLPL7YofVQbCL4IVI4vsf9Th3k6/1pu4+bmvQWQljJwZENDsWePEP8gBkDKTsRzc5uVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js" defer></script>
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <script>
+        $(document).ready(function () {
+            $('#Education').select2({
+                placeholder: "Select Education"
+
+            });
+            $("#hobby").select2({
+                placeholder: "Select Hobbies",
+                allowClear: true
+            });
+            var date = new Date()
+            var year = date.getUTCFullYear();
+            var startYear = year - 75;
+            $("#date").datepicker({
+                changeYear: true,
+                changeYear: true,
+                buttonText:"Hello"
+            });
+            $("#datetime").daterangepicker({
+                changeYear: true,
+                opens: 'left',
+                showDropdowns: true,
+                autoApply: true,
+                linkedCalendars: true,
+                timePicker: true,
+                minYear: 1999,
+                maxYear: 2099,
+                showWeekNumbers:true
+            });
+        });
+    </script>
+
+
+}

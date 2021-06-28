@@ -1,0 +1,10 @@
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Debug\MyService_Ex.exe.config
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Debug\MyService_Ex.exe
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\bin\Debug\MyService_Ex.pdb
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\obj\Debug\MyService_Ex.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\obj\Debug\MyService_Ex.ProjectInstaller.resources
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\obj\Debug\MyService_Ex.Scheduler.resources
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\obj\Debug\MyService_Ex.csproj.GenerateResource.cache
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\obj\Debug\MyService_Ex.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\obj\Debug\MyService_Ex.exe
+E:\Manit\SatvaTraining\MyService_Ex\MyService_Ex\obj\Debug\MyService_Ex.pdb

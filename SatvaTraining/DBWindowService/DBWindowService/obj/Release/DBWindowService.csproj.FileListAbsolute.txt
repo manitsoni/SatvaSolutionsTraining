@@ -1,0 +1,14 @@
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe.config
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.pdb
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\EntityFramework.dll
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\EntityFramework.SqlServer.dll
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\EntityFramework.xml
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\EntityFramework.SqlServer.xml
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\obj\Release\DBWindowService.csprojAssemblyReference.cache
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\obj\Release\DBWindowService.csproj.CoreCompileInputs.cache
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\obj\Release\DBWindowService.csproj.CopyComplete
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\obj\Release\DBWindowService.exe
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\obj\Release\DBWindowService.pdb
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\obj\Release\DBWindowService.ProjectInstaller.resources
+E:\Manit\SatvaTraining\DBWindowService\DBWindowService\obj\Release\DBWindowService.csproj.GenerateResource.cache

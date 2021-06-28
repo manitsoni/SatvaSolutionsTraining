@@ -3,7 +3,9 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_SuperAdmin.cshtml";
 }
-
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <div class="row">
     <div class="col-md-4 ">
         <div class="card">
@@ -124,12 +126,10 @@
         height: 50px;
     }
 </style>
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
     $(document).ready(function () {
+
         $("#loading").show();
        $("#cname").val("");
        $("#email").val("");
@@ -140,8 +140,9 @@
        $("#Id").val("");
         LoadData();
         $("#loading").hide();
+
         $(document).on("mouseover", "tr.rows td", function (e) {
-            $('[data-toggle="tooltip"]').tooltip(); 
+            $('[data-toggle="tooltip"]').tooltip();
         });
     });
     function LoadData()
@@ -163,7 +164,7 @@
                     html += '<td>' + item.ContactNo + '</td>';
                     html += '<td>' + item.IsActive + '</td>';
                     html += '<td>' + new Date(parseInt(item.CreatedDate))   + '</td>';
-                   
+
                     html += '</tr>';
                 });
                 $('.tbody').html(html);
@@ -199,27 +200,43 @@
         });
     }
     function Delete(id) {
-        $("#loading").show();
-       $.ajax({
-                url:'@Url.Action("Delete", "SuperAdmin")',
-                type: 'GET',
-                data: {Id : id},
-                contentType: "application/json;charset=utf-8",
-                dataType: "json",
-           success: function (result) {
-               $("#loading").hide();
-                    swal({
-                        title: "Delete",
-                        text: "Delete company success",
-                        imageUrl: 'thumbs-up.jpg'
-                    });
-                    LoadData();
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this imaginary file!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    $("#loading").show();
+                    $.ajax({
+                        url:'@Url.Action("Delete", "SuperAdmin")',
+                        type: 'GET',
+                        data: {Id : id},
+                        contentType: "application/json;charset=utf-8",
+                        dataType: "json",
+                        success: function (result) {
+                        $("#loading").hide();
+                            swal({
+                                title: "Delete",
+                                icon: "success",
+                                text: "Delete company success",
+                                imageUrl: 'thumbs-up.jpg'
+                            });
+                            LoadData();
                     $("#Id").val("");
-            },
-           error: function (errormessage) {
-               $("#loading").hide();
-                alert(errormessage.responseText);
-            }});
+                        },
+                       error: function (errormessage) {
+                           $("#loading").hide();
+                            alert(errormessage.responseText);
+                    }
+                });
+                } else {
+                    swal("Cancelled");
+                }
+            });
+
     }
 
    function Add()

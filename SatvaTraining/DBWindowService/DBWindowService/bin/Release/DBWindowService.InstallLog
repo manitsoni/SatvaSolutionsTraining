@@ -1,0 +1,121 @@
+﻿Installing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe assembly.
+Committing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe assembly.
+Committing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe assembly.
+Committing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Installing service Service1...
+Service Service1 has been successfully installed.
+Creating EventLog source Service1 in log Application...
+Committing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Installing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Installing service Service1...
+Creating EventLog source Service1 in log Application...
+Rolling back assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Restoring event log to previous state for source Service1.
+Uninstalling assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Removing EventLog source Service1.
+Service Service1 is being removed from the system...
+Service Service1 was successfully removed from the system.
+Installing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Installing service Service1...
+Service Service1 has been successfully installed.
+Creating EventLog source Service1 in log Application...
+Committing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Installing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Installing service Service1...
+Creating EventLog source Service1 in log Application...
+Rolling back assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Restoring event log to previous state for source Service1.
+Uninstalling assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Removing EventLog source Service1.
+Service Service1 is being removed from the system...
+Service Service1 was successfully removed from the system.
+Attempt to stop service Service1.
+Installing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
+Installing service Service1...
+Service Service1 has been successfully installed.
+Creating EventLog source Service1 in log Application...
+Committing assembly 'E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.exe
+   logfile = E:\Manit\SatvaTraining\DBWindowService\DBWindowService\bin\Release\DBWindowService.InstallLog
